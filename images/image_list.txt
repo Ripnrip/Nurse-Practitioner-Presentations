@@ -1,0 +1,10 @@
+List of images to add to this directory:
+
+1. nasal_anatomy.jpg - Diagram of nasal anatomy
+2. allergic_reaction.jpg - Illustration of allergic reaction mechanism 
+3. nasal_spray_technique.jpg - Demonstration of nasal spray technique
+4. medical_background.jpg - Background for title slide
+5. thank_you.jpg - Background for thank you slide
+6. learning_objectives.jpg - Background for objectives slide
+
+Note: For a working presentation, you would need to download actual image files and place them here, then update the component src attributes. 
