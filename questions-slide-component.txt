@@ -1,0 +1,23 @@
+import React from 'react';
+
+const QuestionsSlide = () => {
+  return (
+    <div className="flex flex-col items-center justify-center h-full">
+      <h1 className="text-4xl font-bold mb-8">Thank You!</h1>
+      <h2 className="text-2xl mb-12">Questions?</h2>
+      
+      <div className="text-center mb-8">
+        <p className="text-xl">Your Name, Credentials</p>
+        <p className="text-lg">Email: your.email@institution.edu</p>
+      </div>
+      
+      <img 
+        src="https://images.unsplash.com/photo-1573166364524-d9dbfd8bbf83?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80" 
+        alt="Thank you slide background" 
+        className="w-full max-w-2xl rounded-lg shadow-lg opacity-20 absolute z-0"
+      />
+    </div>
+  );
+};
+
+export default QuestionsSlide;

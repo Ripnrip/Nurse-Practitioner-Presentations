@@ -1,0 +1,67 @@
+import React from 'react';
+
+const NasalSprayTechniqueSlide = () => {
+  return (
+    <div className="flex flex-col md:flex-row">
+      <div className="md:w-1/2 p-4">
+        <p className="text-xl font-semibold mb-4">STEP-BY-STEP INSTRUCTIONS:</p>
+        
+        <div className="mb-4 p-3 bg-blue-50 rounded-lg shadow border-l-4 border-blue-500">
+          <p className="font-bold">1. Prepare:</p>
+          <ul className="list-disc pl-6 mt-1">
+            <li>Clear nasal passages (gentle blowing)</li>
+            <li>Shake bottle well</li>
+          </ul>
+        </div>
+        
+        <div className="mb-4 p-3 bg-blue-50 rounded-lg shadow border-l-4 border-blue-500">
+          <p className="font-bold">2. Position:</p>
+          <ul className="list-disc pl-6 mt-1">
+            <li>Tilt head slightly forward</li>
+            <li>Aim spray away from septum toward outer wall</li>
+            <li>Use opposite hand for opposite nostril</li>
+          </ul>
+        </div>
+        
+        <div className="mb-4 p-3 bg-blue-50 rounded-lg shadow border-l-4 border-blue-500">
+          <p className="font-bold">3. Administer:</p>
+          <ul className="list-disc pl-6 mt-1">
+            <li>Apply gentle, consistent pressure</li>
+            <li>Breathe in slowly during spray</li>
+            <li>Avoid sniffing forcefully</li>
+          </ul>
+        </div>
+        
+        <div className="p-3 bg-blue-50 rounded-lg shadow border-l-4 border-blue-500">
+          <p className="font-bold">4. After Use:</p>
+          <ul className="list-disc pl-6 mt-1">
+            <li>Wait 15 minutes before blowing nose</li>
+            <li>Store at room temperature</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div className="md:w-1/2 p-4 flex justify-center items-center">
+        <div>
+          <img 
+            src="https://www.researchgate.net/profile/Desiree-Larenas-Linnemann/publication/327867565/figure/fig4/AS:675444620267524@1538049370646/Proper-technique-for-administration-of-nasal-sprays-A-Shake-the-bottle-B-Clear-nasal.png" 
+            alt="Nasal spray technique diagram" 
+            className="max-w-full rounded-lg shadow-lg"
+          />
+          <p className="text-sm italic text-center mt-2">Proper nasal spray technique showing correct positioning and administration</p>
+          
+          <div className="mt-4 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+            <p className="font-semibold">Common Mistakes to Avoid:</p>
+            <ul className="list-disc pl-6 mt-1 text-sm">
+              <li><span className="font-semibold">Do not</span> aim toward the nasal septum (increases risk of epistaxis)</li>
+              <li><span className="font-semibold">Do not</span> tilt head backward (causes medication to run down throat)</li>
+              <li><span className="font-semibold">Do not</span> sniff forcefully (reduces medication contact with nasal mucosa)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default NasalSprayTechniqueSlide;

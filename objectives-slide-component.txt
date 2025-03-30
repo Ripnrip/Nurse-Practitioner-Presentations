@@ -1,0 +1,23 @@
+import React from 'react';
+
+const ObjectivesSlide = () => {
+  return (
+    <div className="flex flex-col space-y-4">
+      <p className="text-xl font-semibold mb-4">By the end of this presentation, participants will be able to:</p>
+      <ul className="list-disc pl-8 space-y-2">
+        <li className="text-lg">Identify common causes of chronic cough in older adults</li>
+        <li className="text-lg">Recognize the impact of comorbidities and polypharmacy on diagnosing cough</li>
+        <li className="text-lg">Discuss the diagnostic process when initial treatments fail</li>
+        <li className="text-lg">Review evidence-based management for allergic rhinitis in older adults</li>
+        <li className="text-lg">Develop a patient-centered care plan for allergic rhinitis</li>
+      </ul>
+      <img 
+        src="https://images.unsplash.com/photo-1571260899304-425eee4c7efd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80" 
+        alt="Learning objectives background" 
+        className="w-full max-w-2xl rounded-lg shadow-lg mt-4 mx-auto"
+      />
+    </div>
+  );
+};
+
+export default ObjectivesSlide;

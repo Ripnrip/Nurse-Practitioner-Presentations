@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Slide transitions */
+.slide-transition-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.slide-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+} 
