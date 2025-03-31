@@ -2,7 +2,7 @@ import React from 'react';
 
 const TreatmentPlanSlide = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 gap-6">
       <div className="space-y-4">
         <div className="bg-white p-5 rounded-lg shadow-md border-t-4 border-blue-500">
           <h3 className="text-lg font-bold text-blue-700 mb-3">Pharmacological Management</h3>
@@ -55,68 +55,6 @@ const TreatmentPlanSlide = () => {
                   dust mites, pollen, and mold</li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-      
-      <div className="space-y-4">
-        <div className="bg-white p-5 rounded-lg shadow-md border-t-4 border-purple-500">
-          <h3 className="text-lg font-bold text-purple-700 mb-3">Rationale for Treatment Plan</h3>
-          <div className="space-y-3">
-            <div className="p-3 bg-purple-50 rounded">
-              <p className="font-semibold">Target Primary Etiology:</p>
-              <ul className="list-disc pl-5 text-sm mt-1">
-                <li>Allergic rhinitis - Continue antihistamine therapy given excellent response</li>
-                <li>GERD - Optimize acid suppression with scheduled PPI dosing</li>
-                <li>Weight management discussion - Obesity can worsen both GERD and allergic symptoms</li>
-              </ul>
-            </div>
-            
-            <div className="p-3 bg-purple-50 rounded">
-              <p className="font-semibold">Evidence-Based Approach:</p>
-              <ul className="list-disc pl-5 text-sm mt-1">
-                <li>Second-generation antihistamines are first-line therapy for allergic rhinitis with fewer side effects 
-                  than first-generation agents</li>
-                <li>Lifestyle modifications are key components of GERD management in addition to PPIs</li>
-                <li>Environmental controls have been shown to reduce allergic triggers and symptom burden</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
-        <div className="bg-white p-5 rounded-lg shadow-md border-t-4 border-yellow-500">
-          <h3 className="text-lg font-bold text-yellow-700 mb-3">Therapeutic Goals</h3>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="p-3 bg-yellow-50 rounded">
-              <p className="font-semibold text-center mb-2">Short-Term Goals</p>
-              <ul className="list-disc pl-5 text-sm">
-                <li>Maintain symptom control with current antihistamine therapy</li>
-                <li>Improve GERD symptoms with optimized PPI dosing</li>
-                <li>Implement environmental control measures</li>
-              </ul>
-            </div>
-            
-            <div className="p-3 bg-yellow-50 rounded">
-              <p className="font-semibold text-center mb-2">Long-Term Goals</p>
-              <ul className="list-disc pl-5 text-sm">
-                <li>Complete resolution of chronic cough</li>
-                <li>Weight reduction to BMI &lt;30</li>
-                <li>Prevent recurrence of symptoms</li>
-                <li>Maintain optimal quality of life</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="mt-4 p-3 bg-yellow-50 rounded">
-            <p className="font-semibold text-center mb-2">Treatment Decision Point</p>
-            <p className="text-sm">
-              If symptoms do not continue to improve with current management, consider:
-              <ol className="list-decimal pl-5 mt-1">
-                <li>Adding intranasal corticosteroid (e.g., fluticasone)</li>
-                <li>Consider 24-hour pH monitoring to definitively assess GERD</li>
-                <li>Trial of inhaled corticosteroid to evaluate for cough-variant asthma</li>
-              </ol>
-            </p>
           </div>
         </div>
       </div>

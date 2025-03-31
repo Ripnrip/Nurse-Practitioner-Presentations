@@ -8,10 +8,6 @@ const EducationSlide = () => {
           <h3 className="text-lg font-bold text-blue-700 mb-3">Treatment Education</h3>
           <ul className="list-disc pl-5 space-y-2">
             <li>
-              <span className="font-semibold">About Your Cough:</span> 
-              <p className="text-sm ml-2">Cough that persists for more than 8 weeks is considered chronic and often has multiple causes.</p>
-            </li>
-            <li>
               <span className="font-semibold">Medication Information:</span> 
               <p className="text-sm ml-2">Continue Zyrtec daily. Change Protonix (pantoprazole) to scheduled daily dosing rather than as needed.</p>
             </li>
@@ -94,38 +90,6 @@ const EducationSlide = () => {
               <p className="text-sm ml-2">Identify and minimize exposure to allergens that may trigger your cough.</p>
             </li>
           </ul>
-        </div>
-      </div>
-      
-      <div className="md:col-span-2 bg-blue-50 p-4 rounded-lg shadow-md">
-        <h3 className="text-lg font-bold text-center text-blue-700 mb-3">Patient Resources</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-white p-3 rounded-lg shadow-sm">
-            <h4 className="font-semibold text-center mb-2">Educational Materials</h4>
-            <ul className="list-disc pl-5 text-sm">
-              <li>American Lung Association</li>
-              <li>GERD and Cough Handout</li>
-              <li>Allergy Avoidance Guide</li>
-            </ul>
-          </div>
-          
-          <div className="bg-white p-3 rounded-lg shadow-sm">
-            <h4 className="font-semibold text-center mb-2">Monitoring Tools</h4>
-            <ul className="list-disc pl-5 text-sm">
-              <li>Cough Diary Template</li>
-              <li>Symptom Severity Scale</li>
-              <li>Medication Tracking Sheet</li>
-            </ul>
-          </div>
-          
-          <div className="bg-white p-3 rounded-lg shadow-sm">
-            <h4 className="font-semibold text-center mb-2">Mobile Resources</h4>
-            <ul className="list-disc pl-5 text-sm">
-              <li>Medication Reminder Apps</li>
-              <li>Air Quality Index Trackers</li>
-              <li>Local Pollen Count Alerts</li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>

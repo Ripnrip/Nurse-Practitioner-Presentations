@@ -84,11 +84,6 @@ const VitalSignsSlide = () => {
             </div>
             <p className="text-sm">Negative for pneumonia, infiltrates, or other acute processes.</p>
           </div>
-          
-          <div className="mt-4 p-3 bg-yellow-50 border-l-4 border-yellow-400 rounded">
-            <p className="text-sm font-semibold">Note on Diagnostic Studies:</p>
-            <p className="text-xs">Additional diagnostic studies were not performed at this time as the patient's cough showed significant improvement with antihistamine therapy. Normal spirometry results help rule out asthma as a possible cause.</p>
-          </div>
         </div>
       </div>
     </div>

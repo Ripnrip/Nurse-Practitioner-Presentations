@@ -75,29 +75,6 @@ const PhysicalExamSlide = () => {
           </p>
         </div>
       </div>
-      
-      <div className="md:col-span-2 bg-blue-50 p-4 rounded-lg shadow-md">
-        <h3 className="text-lg font-bold text-center text-blue-700 mb-3">Physical Exam Summary</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-white p-3 rounded-lg shadow">
-            <h4 className="font-semibold text-center mb-2">Key Findings</h4>
-            <ul className="list-disc pl-5 text-sm">
-              <li>No signs of respiratory distress</li>
-              <li>Clear lungs on auscultation</li>
-              <li>No evidence of nasal or sinus involvement</li>
-              <li>No signs of postnasal drip</li>
-            </ul>
-          </div>
-          <div className="bg-white p-3 rounded-lg shadow">
-            <h4 className="font-semibold text-center mb-2">Clinical Interpretation</h4>
-            <p className="text-sm">
-              Physical examination is largely unremarkable, suggesting that the patient's cough may be due to a non-acute 
-              process. The absence of postnasal drip, wheezing, or adventitious lung sounds helps narrow the differential 
-              diagnosis. The improvement with antihistamine therapy suggests a possible allergic component.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
