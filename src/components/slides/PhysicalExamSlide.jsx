@@ -37,26 +37,6 @@ const PhysicalExamSlide = () => {
           <p className="text-sm mb-2">
             Lungs clear on auscultation, no wheezes or crackles. Chest expansion symmetrical. Respirations unlabored
           </p>
-          
-          <div className="grid grid-cols-2 gap-2 mt-4">
-            <div className="bg-white p-3 rounded border border-gray-200">
-              <h4 className="font-semibold mb-1 text-sm">Anterior Findings</h4>
-              <ul className="list-disc pl-4 text-xs">
-                <li>Clear to auscultation</li>
-                <li>Normal breath sounds</li>
-                <li>Normal percussion</li>
-              </ul>
-            </div>
-            
-            <div className="bg-white p-3 rounded border border-gray-200">
-              <h4 className="font-semibold mb-1 text-sm">Posterior Findings</h4>
-              <ul className="list-disc pl-4 text-xs">
-                <li>Clear to auscultation</li>
-                <li>Normal breath sounds</li>
-                <li>Normal percussion</li>
-              </ul>
-            </div>
-          </div>
         </div>
         
         <div className="bg-white p-4 rounded-lg shadow-md mb-4">
