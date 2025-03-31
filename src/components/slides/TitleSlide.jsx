@@ -8,7 +8,7 @@ const TitleSlide = () => {
       </h1>
       <div className="text-center mb-8">
         <p className="text-lg">Gina P. Hoyos, BSN, RN</p>
-        <p className="text-lg">NUR 680 OLDER ADULT</p>
+        <p className="text-lg">NUR 680 Healthcare Management of The Older Adult</p>
         <p className="text-lg">March 30, 2025</p>
       </div>
       {/* Use this div if the image isn't available yet */}
