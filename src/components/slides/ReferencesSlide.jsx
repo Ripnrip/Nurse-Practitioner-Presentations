@@ -27,38 +27,6 @@ const ReferencesSlide = () => {
         </div>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-white p-4 rounded-lg shadow-md">
-          <h3 className="text-lg font-bold text-blue-700 mb-3">Clinical Guidelines</h3>
-          <ul className="list-disc pl-5 space-y-2 text-sm">
-            <li>
-              American College of Chest Physicians (CHEST) guidelines on cough management
-            </li>
-            <li>
-              European Respiratory Society (ERS) guidelines on chronic cough
-            </li>
-            <li>
-              American Academy of Allergy, Asthma & Immunology (AAAAI) practice parameters
-            </li>
-          </ul>
-        </div>
-        
-        <div className="bg-white p-4 rounded-lg shadow-md">
-          <h3 className="text-lg font-bold text-blue-700 mb-3">Additional Resources</h3>
-          <ul className="list-disc pl-5 space-y-2 text-sm">
-            <li>
-              American Lung Association: Resources for patients and providers on chronic cough management
-            </li>
-            <li>
-              National Heart, Lung, and Blood Institute (NHLBI): Educational materials on respiratory conditions
-            </li>
-            <li>
-              Centers for Disease Control and Prevention (CDC): Guidance on respiratory infection prevention
-            </li>
-          </ul>
-        </div>
-      </div>
-      
       <p className="text-xs text-center text-gray-500">
         Note: This presentation is for educational purposes only. Always consult current clinical guidelines and primary literature for the most up-to-date information.
       </p>
