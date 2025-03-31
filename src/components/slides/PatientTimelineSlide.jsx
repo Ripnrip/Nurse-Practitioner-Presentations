@@ -3,7 +3,7 @@ import React from 'react';
 const PatientTimelineSlide = () => {
   return (
     <div className="space-y-6">
-      <p className="text-xl font-bold text-center">Chief Complaint: "Follow up cough"</p>
+      <p className="text-xl font-bold text-center">Chief Complaint: "Persistent cough for over 8 weeks"</p>
       
       <div className="relative h-64 border-b-2 border-gray-400 mx-4">
         {/* Timeline */}
@@ -24,7 +24,7 @@ const PatientTimelineSlide = () => {
           <div className="h-4 w-4 rounded-full bg-blue-600 absolute top-10 left-0 transform -translate-x-2"></div>
           <div className="font-bold">Jan 30, 2025</div>
           <div className="absolute top-16 left-0 w-32 text-sm">
-            <p className="font-semibold">Fatigue, runny nose, headache, cough</p>
+            <p className="font-semibold">Fatigue, chest congestion, cough</p>
             <p className="text-xs text-blue-600">Rx Augmentin</p>
           </div>
         </div>
@@ -51,7 +51,7 @@ const PatientTimelineSlide = () => {
           <div className="absolute top-16 left-0 w-32 text-sm">
             <p className="font-semibold">Continued cough</p>
             <p className="text-xs">(white/clear sputum)</p>
-            <p className="text-xs text-blue-600">OTC Zyrtec trial advised</p>
+            <p className="text-xs text-blue-600">Tessalon Perles prescribed</p>
           </div>
         </div>
         
@@ -60,14 +60,15 @@ const PatientTimelineSlide = () => {
           <div className="h-4 w-4 rounded-full bg-blue-600 absolute top-10 left-0 transform -translate-x-2"></div>
           <div className="font-bold">Mar 25, 2025</div>
           <div className="absolute top-16 left-0 w-32 text-sm">
-            <p className="font-semibold">Significant improvement with Zyrtec</p>
-            <p className="text-xs text-blue-600">Spirometry normal</p>
+            <p className="font-semibold">Minimal improvement</p>
+            <p className="text-xs">Chronic cough diagnosis</p>
+            <p className="text-xs text-blue-600">PFTs ordered</p>
           </div>
         </div>
       </div>
       
       <div className="text-sm italic text-center mt-4">
-        Timeline showing progression from initial symptom presentation to diagnosis
+        Timeline showing progression from initial symptom presentation to chronic cough diagnosis
       </div>
     </div>
   );

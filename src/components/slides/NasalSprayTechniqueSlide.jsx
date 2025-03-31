@@ -4,103 +4,79 @@ const NasalSprayTechniqueSlide = () => {
   return (
     <div className="flex flex-col md:flex-row">
       <div className="md:w-1/2 p-4">
-        <p className="text-xl font-semibold mb-4">STEP-BY-STEP INSTRUCTIONS:</p>
+        <p className="text-xl font-semibold mb-4">PROPER MDI INHALER TECHNIQUE:</p>
         
         <div className="mb-4 p-3 bg-blue-50 rounded-lg shadow border-l-4 border-blue-500">
           <p className="font-bold">1. Prepare:</p>
           <ul className="list-disc pl-6 mt-1">
-            <li>Clear nasal passages (gentle blowing)</li>
-            <li>Shake bottle well</li>
+            <li>Remove cap and shake inhaler well</li>
+            <li>Exhale completely away from inhaler</li>
+            <li>Hold inhaler upright with mouthpiece at bottom</li>
           </ul>
         </div>
         
         <div className="mb-4 p-3 bg-blue-50 rounded-lg shadow border-l-4 border-blue-500">
           <p className="font-bold">2. Position:</p>
           <ul className="list-disc pl-6 mt-1">
-            <li>Tilt head slightly forward</li>
-            <li>Aim spray away from septum toward outer wall</li>
-            <li>Use opposite hand for opposite nostril</li>
+            <li>Option 1: Place mouthpiece between lips, sealed tightly</li>
+            <li>Option 2: Hold 1-2 inches from open mouth (with spacer)</li>
+            <li>Tilt head slightly back</li>
           </ul>
         </div>
         
         <div className="mb-4 p-3 bg-blue-50 rounded-lg shadow border-l-4 border-blue-500">
           <p className="font-bold">3. Administer:</p>
           <ul className="list-disc pl-6 mt-1">
-            <li>Apply gentle, consistent pressure</li>
-            <li>Breathe in slowly during spray</li>
-            <li>Avoid sniffing forcefully</li>
+            <li>Begin slow, deep breath through mouth</li>
+            <li>Press canister down firmly while continuing to inhale</li>
+            <li>Continue slow, deep breath for 3-5 seconds</li>
           </ul>
         </div>
         
         <div className="p-3 bg-blue-50 rounded-lg shadow border-l-4 border-blue-500">
           <p className="font-bold">4. After Use:</p>
           <ul className="list-disc pl-6 mt-1">
-            <li>Wait 15 minutes before blowing nose</li>
-            <li>Store at room temperature</li>
+            <li>Hold breath for 10 seconds or as long as comfortable</li>
+            <li>Wait 30-60 seconds before second puff (if prescribed)</li>
+            <li>Replace cap and rinse mouth if using corticosteroid inhaler</li>
           </ul>
         </div>
       </div>
       
       <div className="md:w-1/2 p-4">
-        <div className="bg-white rounded-lg shadow-lg p-6">
-          {/* Healthcare Provider Demonstration */}
-          <div className="relative h-[400px] bg-blue-50 rounded-lg overflow-hidden">
-            {/* Provider figure */}
-            <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <div className="relative">
-                {/* Lab coat */}
-                <div className="w-40 h-48 bg-white rounded-t-full"></div>
-                
-                {/* Head */}
-                <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
-                  <div className="w-20 h-24 bg-[#FFE0BD] rounded-t-full"></div>
-                  {/* Hair */}
-                  <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-24 h-12 bg-[#4A4A4A] rounded-t-full"></div>
-                </div>
-                
-                {/* Stethoscope */}
-                <div className="absolute top-12 left-1/2 transform -translate-x-1/2">
-                  <div className="w-16 h-2 bg-[#2563EB] rounded-full"></div>
-                </div>
-                
-                {/* Arms demonstrating spray technique */}
-                <div className="absolute top-16 right-0">
-                  {/* Arm holding spray */}
-                  <div className="w-20 h-4 bg-[#FFE0BD] rounded-full transform rotate-45"></div>
-                  {/* Nasal spray */}
-                  <div className="absolute top-0 right-0">
-                    <div className="w-6 h-12 bg-blue-500 rounded"></div>
-                    <div className="w-4 h-2 bg-blue-600 rounded-t absolute -top-2 left-1"></div>
-                  </div>
-                </div>
-                
-                {/* Patient head outline */}
-                <div className="absolute top-8 right-[-60px]">
-                  <div className="w-24 h-32 bg-[#FFE0BD] rounded-t-full transform rotate-12">
-                    {/* Nose */}
-                    <div className="absolute top-16 left-8 w-8 h-10 bg-[#FFE0BD] rounded"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Directional arrow */}
-            <div className="absolute top-1/2 right-[120px] transform rotate-45">
-              <div className="w-16 h-2 bg-blue-500"></div>
-              <div className="w-4 h-4 border-t-2 border-r-2 border-blue-500 transform rotate-45 absolute -right-1 -top-1"></div>
-            </div>
-          </div>
+        <div className="bg-white rounded-lg shadow-lg p-6 mb-4">
+          <p className="text-xl font-semibold mb-4">ADDITIONAL MEDICATION TECHNIQUES:</p>
           
-          <p className="text-sm italic text-center mt-4">Healthcare provider demonstrating proper nasal spray technique</p>
-          
-          <div className="mt-4 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
-            <p className="font-semibold">Common Mistakes to Avoid:</p>
-            <ul className="list-disc pl-6 mt-1 text-sm">
-              <li><span className="font-semibold">Do not</span> aim toward the nasal septum (increases risk of epistaxis)</li>
-              <li><span className="font-semibold">Do not</span> tilt head backward (causes medication to run down throat)</li>
-              <li><span className="font-semibold">Do not</span> sniff forcefully (reduces medication contact with nasal mucosa)</li>
+          <div className="mb-4 p-3 bg-blue-50 rounded-lg shadow border-l-4 border-blue-500">
+            <p className="font-bold">Tessalon Perles (Benzonatate):</p>
+            <ul className="list-disc pl-6 mt-1">
+              <li>Swallow capsules whole - do not chew, crush, or dissolve</li>
+              <li>Take with full glass of water</li>
+              <li>Temporary numbness of mouth/throat may occur</li>
+              <li>Take as prescribed (typically 100mg TID PRN)</li>
             </ul>
           </div>
+          
+          <div className="mb-4 p-3 bg-blue-50 rounded-lg shadow border-l-4 border-blue-500">
+            <p className="font-bold">PPI Administration (for GERD-related cough):</p>
+            <ul className="list-disc pl-6 mt-1">
+              <li>Take 30-60 minutes before first meal of the day</li>
+              <li>Swallow tablets whole - do not crush or chew</li>
+              <li>For optimal effect, take consistently at same time daily</li>
+              <li>Consider twice daily dosing if symptoms persist</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+          <p className="font-semibold">Common Technique Errors:</p>
+          <ul className="list-disc pl-6 mt-1 text-sm">
+            <li><span className="font-semibold">Not shaking inhaler</span> - reduces medication delivery</li>
+            <li><span className="font-semibold">Inhaling too rapidly</span> - decreases lung deposition</li>
+            <li><span className="font-semibold">Poor coordination</span> - pressing canister before inhaling</li>
+            <li><span className="font-semibold">Not using spacer</span> - when recommended for coordination issues</li>
+            <li><span className="font-semibold">Not waiting between puffs</span> - reduces effectiveness</li>
+          </ul>
         </div>
       </div>
     </div>

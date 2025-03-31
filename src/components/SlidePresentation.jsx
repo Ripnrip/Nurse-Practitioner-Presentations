@@ -34,10 +34,10 @@ const SlidePresentation = () => {
   };
 
   const slides = [
-    { title: "Persistent Cough Leading to Allergic Rhinitis Diagnosis in an Older Adult", component: <TitleSlide /> },
+    { title: "Chronic Cough Case Study in an Older Adult", component: <TitleSlide /> },
     { title: "Learning Objectives", component: <ObjectivesSlide /> },
-    { title: "Allergic Rhinitis (AR): Disease Definition & Nasal Anatomy", component: <DiseaseDefinitionSlide /> },
-    { title: "Pathophysiology of Allergic Rhinitis", component: <PathophysiologySlide /> },
+    { title: "Chronic Cough: Disease Definition & Classification", component: <DiseaseDefinitionSlide /> },
+    { title: "Pathophysiology of Chronic Cough", component: <PathophysiologySlide /> },
     { title: "Epidemiology & Risk Factors", component: <EpidemiologySlide /> },
     { title: "Differential Diagnosis Comparison", component: <DifferentialDiagnosisSlide /> },
     { title: "Patient Journey: 71-year-old Caucasian Female", component: <PatientTimelineSlide /> },
@@ -49,7 +49,7 @@ const SlidePresentation = () => {
     { title: "Working Diagnosis", component: <WorkingDiagnosisSlide /> },
     { title: "Evidence-Based Management", component: <TreatmentAlgorithmSlide /> },
     { title: "Pharmacological Management", component: <PharmacologicalSlide /> },
-    { title: "Proper Intranasal Corticosteroid Technique", component: <NasalSprayTechniqueSlide /> },
+    { title: "Proper Inhaler & Medication Technique", component: <NasalSprayTechniqueSlide /> },
     { title: "Non-Pharmacological Interventions", component: <NonPharmacologicalSlide /> },
     { title: "Patient Education & Follow-Up Plan", component: <FollowUpSlide /> },
     { title: "Coding & Billing", component: <BillingCodingSlide /> },
@@ -71,7 +71,7 @@ const SlidePresentation = () => {
           </button>
           <div className="text-center">
             <p className="text-sm">Slide {currentSlide + 1} of {slides.length}</p>
-            <h2 className="text-lg font-semibold">Allergic Rhinitis Case Study</h2>
+            <h2 className="text-lg font-semibold">Chronic Cough Case Study</h2>
           </div>
           <button 
             onClick={goToNextSlide}

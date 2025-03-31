@@ -28,18 +28,18 @@ const PatientProfileSlide = () => {
         
         <p className="text-xl font-semibold mt-4">Medications:</p>
         <ul className="list-disc pl-8 space-y-1">
-          <li>Amlodipine 5mg daily (previously lisinopril)</li>
+          <li>Amlodipine 5mg daily (switched from lisinopril)</li>
           <li>Amiodarone 50mg daily</li>
           <li>Xarelto 20mg daily</li>
           <li>Protonix 20mg daily PRN</li>
           <li>Lexapro 20mg daily</li>
-          <li><span className="font-semibold text-green-600">Zyrtec 10mg daily</span> (started 02/2025)</li>
+          <li>Tessalon Perles 100mg TID PRN (added 02/2025)</li>
         </ul>
       </div>
       
       <div className="md:w-1/2 p-4">
         <div className="bg-blue-50 p-4 rounded-lg shadow-lg">
-          <p className="text-center font-semibold text-lg mb-4">Cough Diagnostic Timeline</p>
+          <p className="text-center font-semibold text-lg mb-4">Chronic Cough Diagnostic Timeline</p>
           
           <div className="relative">
             {/* Vertical timeline line */}
@@ -90,8 +90,8 @@ const PatientProfileSlide = () => {
                 <div className="bg-white rounded-lg shadow p-3 flex-grow">
                   <p className="font-semibold">Persistent Cough</p>
                   <p className="text-sm">Continued cough with white/clear sputum, dyspnea on exertion</p>
-                  <p className="text-sm italic mt-1">Assessment: <span className="text-yellow-600">Consider allergic etiology</span></p>
-                  <p className="text-sm font-semibold mt-1">Intervention: Trial of OTC Zyrtec (cetirizine)</p>
+                  <p className="text-sm italic mt-1">Assessment: <span className="text-yellow-600">Consider multifactorial etiology</span></p>
+                  <p className="text-sm font-semibold mt-1">Intervention: Trial of Tessalon Perles</p>
                 </div>
               </div>
               
@@ -99,13 +99,13 @@ const PatientProfileSlide = () => {
               <div className="flex">
                 <div className="flex-shrink-0 flex flex-col items-center mr-4">
                   <div className="text-sm font-bold text-blue-600 w-20 text-right">02/27/2025</div>
-                  <div className="h-4 w-4 rounded-full bg-green-500 mt-1 border-2 border-white"></div>
+                  <div className="h-4 w-4 rounded-full bg-blue-500 mt-1 border-2 border-white"></div>
                 </div>
-                <div className="bg-green-50 border-l-4 border-green-500 rounded-lg shadow p-3 flex-grow">
-                  <p className="font-semibold text-green-800">Significant Improvement</p>
-                  <p className="text-sm">Cough significantly improved with antihistamine therapy</p>
-                  <p className="text-sm italic mt-1">Assessment: <span className="text-green-600">Allergic rhinitis confirmed</span></p>
-                  <p className="text-sm font-semibold mt-1">Intervention: Spirometry test (normal) to rule out asthma</p>
+                <div className="bg-blue-50 border-l-4 border-blue-500 rounded-lg shadow p-3 flex-grow">
+                  <p className="font-semibold">Current Presentation</p>
+                  <p className="text-sm">Cough persists despite medication changes</p>
+                  <p className="text-sm italic mt-1">Assessment: <span className="text-blue-600">Chronic cough work-up needed</span></p>
+                  <p className="text-sm font-semibold mt-1">Planned diagnostics: PFTs, CT scan, reflux evaluation</p>
                 </div>
               </div>
             </div>
