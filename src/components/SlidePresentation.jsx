@@ -7,6 +7,7 @@ import RiskFactorsSlide from './slides/RiskFactorsSlide';
 import GoalsOfTherapySlide from './slides/GoalsOfTherapySlide';
 import DiagnosticsSlide from './slides/DiagnosticsSlide';
 import TreatmentGuidelinesSlide from './slides/TreatmentGuidelinesSlide';
+import CoughAlgorithmSlide from './slides/CoughAlgorithmSlide';
 import FollowUpSlide from './slides/FollowUpSlide';
 import CaseStudySlide from './slides/CaseStudySlide';
 import PatientHistorySlide from './slides/PatientHistorySlide';
@@ -40,6 +41,7 @@ const SlidePresentation = () => {
     { title: "VI. Goals of Therapy", component: <GoalsOfTherapySlide /> },
     { title: "VII. Recommended Diagnostics", component: <DiagnosticsSlide /> },
     { title: "VIII. Treatment Guidelines", component: <TreatmentGuidelinesSlide /> },
+    { title: "VIIIa. Cough Management Algorithm", component: <CoughAlgorithmSlide /> },
     { title: "IX. Follow-Up & Education Recommendations", component: <FollowUpSlide /> },
     { title: "X. Case Study", component: <CaseStudySlide /> },
     { title: "XI. Subjective: Patient History", component: <PatientHistorySlide /> },
