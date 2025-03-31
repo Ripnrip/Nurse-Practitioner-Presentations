@@ -8,21 +8,36 @@ const ReferencesSlide = () => {
         
         <div className="space-y-4">
           <div className="p-3 bg-blue-50 rounded-lg">
-            <p className="text-sm">
-              Kennedy-Malone, L., & Duffy, E. G. (2022). <span className="italic">Advanced practice nursing in the care of older adults</span>. F.A. Davis Company.
-            </p>
+            <div className="flex items-start">
+              <div className="bg-blue-100 px-2 py-1 rounded text-sm font-semibold mr-2 whitespace-nowrap">
+                Slides: 3, 4, 5
+              </div>
+              <p className="text-sm">
+                Kennedy-Malone, L., & Duffy, E. G. (2022). <span className="italic">Advanced practice nursing in the care of older adults</span>. F.A. Davis Company.
+              </p>
+            </div>
           </div>
           
           <div className="p-3 bg-blue-50 rounded-lg">
-            <p className="text-sm">
-              Sonoda, K., & Nayak, R. (2024). Chronic cough: Evaluation and management. <span className="italic">American Family Physician, 110</span>(2), 167–173.
-            </p>
+            <div className="flex items-start">
+              <div className="bg-blue-100 px-2 py-1 rounded text-sm font-semibold mr-2 whitespace-nowrap">
+                Slides: 6, 7
+              </div>
+              <p className="text-sm">
+                Sonoda, K., & Nayak, R. (2024). Chronic cough: Evaluation and management. <span className="italic">American Family Physician, 110</span>(2), 167–173.
+              </p>
+            </div>
           </div>
           
           <div className="p-3 bg-blue-50 rounded-lg">
-            <p className="text-sm">
-              Weinberger, S. E., & Saukkonen, K. (2025). Evaluation and treatment of subacute and chronic cough in adults. <span className="italic">UpToDate</span>. Retrieved March 30, 2025, from https://www.uptodate.com/contents/evaluation-and-treatment-of-subacute-and-chronic-cough-in-adults
-            </p>
+            <div className="flex items-start">
+              <div className="bg-blue-100 px-2 py-1 rounded text-sm font-semibold mr-2 whitespace-nowrap">
+                Slides: 8, 10
+              </div>
+              <p className="text-sm">
+                Weinberger, S. E., & Saukkonen, K. (2025). Evaluation and treatment of subacute and chronic cough in adults. <span className="italic">UpToDate</span>. Retrieved March 30, 2025, from https://www.uptodate.com/contents/evaluation-and-treatment-of-subacute-and-chronic-cough-in-adults
+              </p>
+            </div>
           </div>
         </div>
       </div>
