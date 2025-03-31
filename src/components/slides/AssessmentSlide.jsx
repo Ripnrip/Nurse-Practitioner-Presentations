@@ -3,13 +3,13 @@ import React from 'react';
 const AssessmentSlide = () => {
   return (
     <div className="grid grid-cols-1 gap-6">
-      <div className="bg-blue-50 p-5 rounded-lg shadow-md">
-        <h3 className="text-xl font-bold text-blue-700 mb-3 text-center">Working Diagnoses</h3>
+      <div className="bg-white p-5 rounded-lg shadow-md">
+        <h3 className="text-xl font-bold mb-3 text-center">Working Diagnoses</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-green-500">
             <div className="flex justify-between items-start">
               <h4 className="font-bold mb-2">Seasonal Allergic Rhinitis</h4>
-              <span className="text-sm text-green-700 font-semibold">J30.2</span>
+              <span className="text-sm font-semibold">J30.2</span>
             </div>
             <p className="text-sm">
               Significant improvement with antihistamine therapy strongly supports this diagnosis. Response to 
@@ -20,7 +20,7 @@ const AssessmentSlide = () => {
           <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-500">
             <div className="flex justify-between items-start">
               <h4 className="font-bold mb-2">Gastroesophageal Reflux Disease</h4>
-              <span className="text-sm text-blue-700 font-semibold">K21</span>
+              <span className="text-sm font-semibold">K21</span>
             </div>
             <p className="text-sm">
               Known history of GERD (2018) with PRN use of PPI. GERD is a common cause of chronic cough 
@@ -31,7 +31,7 @@ const AssessmentSlide = () => {
           <div className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-yellow-500">
             <div className="flex justify-between items-start">
               <h4 className="font-bold mb-2">Chronic Cough</h4>
-              <span className="text-sm text-yellow-700 font-semibold">R05.3</span>
+              <span className="text-sm font-semibold">R05.3</span>
             </div>
             <p className="text-sm">
               Patient presents with cough persisting more than 8 weeks. While improvement seen with 
