@@ -27,22 +27,9 @@ const ROSSlide = () => {
         <p><span className="font-semibold">Cardiovascular:</span> Denies chest pain, tightness, palpitations, shortness of breath with activity, edema, or difficulty breathing lying down</p>
       </div>
       
-      <div className="bg-white p-4 rounded-lg shadow-md md:col-span-2 lg:col-span-3">
-        <h3 className="text-lg font-bold text-blue-700 mb-3">Other Systems</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div>
-            <p><span className="font-semibold">Gastrointestinal:</span> Denies abdominal pain, nausea, vomiting, diarrhea, constipation, changes in appetite, heartburn, bloating, or changes in bowel habits, yellow discoloration, or difficulty swallowing</p>
-          </div>
-          <div>
-            <p><span className="font-semibold">Genitourinary:</span> Not reported</p>
-            <p><span className="font-semibold">Musculoskeletal:</span> Not reported</p>
-          </div>
-          <div>
-            <p><span className="font-semibold">Neurological:</span> Not reported</p>
-            <p><span className="font-semibold">Psychiatric:</span> Not reported</p>
-            <p><span className="font-semibold">Hematologic:</span> Not reported</p>
-          </div>
-        </div>
+      <div className="bg-white p-4 rounded-lg shadow-md">
+        <h3 className="text-lg font-bold text-blue-700 mb-3">Gastrointestinal</h3>
+        <p><span className="font-semibold">Gastrointestinal:</span> Denies abdominal pain, nausea, vomiting, diarrhea, constipation, changes in appetite, heartburn, bloating, or changes in bowel habits, yellow discoloration, or difficulty swallowing</p>
       </div>
       
       <div className="bg-blue-50 p-4 rounded-lg shadow-md md:col-span-2 lg:col-span-3">
