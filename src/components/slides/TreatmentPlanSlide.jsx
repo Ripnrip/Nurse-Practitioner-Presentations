@@ -15,14 +15,6 @@ const TreatmentPlanSlide = () => {
                 <li><span className="font-semibold">Continued avoidance of ACE inhibitors</span></li>
               </ul>
             </div>
-            
-            <div className="p-3 bg-blue-50 rounded">
-              <p className="font-semibold">Medication Adjustments:</p>
-              <ul className="list-disc pl-5 text-sm mt-1">
-                <li><span className="font-semibold">Pantoprazole (Protonix)</span> - Change from PRN to scheduled 
-                  20mg daily, taken 30-60 minutes before breakfast</li>
-              </ul>
-            </div>
           </div>
         </div>
         
