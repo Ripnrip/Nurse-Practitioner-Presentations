@@ -4,24 +4,6 @@ const EducationSlide = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div>
-        <div className="bg-white p-5 rounded-lg shadow-md border-l-4 border-blue-500 mb-6">
-          <h3 className="text-lg font-bold text-blue-700 mb-3">Treatment Education</h3>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>
-              <span className="font-semibold">Medication Information:</span> 
-              <p className="text-sm ml-2">Continue Zyrtec daily. Change Protonix (pantoprazole) to scheduled daily dosing rather than as needed.</p>
-            </li>
-            <li>
-              <span className="font-semibold">Side Effects to Watch For:</span> 
-              <p className="text-sm ml-2">Mild drowsiness with antihistamines, possible headache or stomach upset with PPI.</p>
-            </li>
-            <li>
-              <span className="font-semibold">Expectations for Improvement:</span> 
-              <p className="text-sm ml-2">Chronic cough may take several weeks to completely resolve, even with appropriate treatment.</p>
-            </li>
-          </ul>
-        </div>
-        
         <div className="bg-white p-5 rounded-lg shadow-md border-l-4 border-green-500">
           <h3 className="text-lg font-bold text-green-700 mb-3">Self-Management Strategies</h3>
           <ul className="list-disc pl-5 space-y-2">
