@@ -17,7 +17,7 @@ const PatientProfileSlide = () => {
         </ul>
         
         <p className="text-xl font-semibold mt-4">Allergies:</p>
-        <p>No Known Allergies</p>
+        <p className="pl-8">Lisinopril - Cough</p>
         
         <p className="text-xl font-semibold mt-4">Social History:</p>
         <ul className="list-disc pl-8 space-y-1">
@@ -25,72 +25,87 @@ const PatientProfileSlide = () => {
           <li>Denies tobacco, alcohol, illicit drugs</li>
           <li>No regular exercise</li>
         </ul>
+        
+        <p className="text-xl font-semibold mt-4">Medications:</p>
+        <ul className="list-disc pl-8 space-y-1">
+          <li>Amlodipine 5mg daily (previously lisinopril)</li>
+          <li>Amiodarone 50mg daily</li>
+          <li>Xarelto 20mg daily</li>
+          <li>Protonix 20mg daily PRN</li>
+          <li>Lexapro 20mg daily</li>
+          <li><span className="font-semibold text-green-600">Zyrtec 10mg daily</span> (started 02/2025)</li>
+        </ul>
       </div>
+      
       <div className="md:w-1/2 p-4">
-        <div className="bg-blue-50 p-6 rounded-lg shadow-md">
-          <p className="text-xl font-semibold mb-4 text-center">Medical History Timeline</p>
+        <div className="bg-blue-50 p-4 rounded-lg shadow-lg">
+          <p className="text-center font-semibold text-lg mb-4">Cough Diagnostic Timeline</p>
           
-          {/* Timeline container */}
           <div className="relative">
-            {/* Vertical line */}
-            <div className="absolute left-24 top-0 bottom-0 w-0.5 bg-blue-300"></div>
+            {/* Vertical timeline line */}
+            <div className="absolute left-[95px] top-0 bottom-0 w-1 bg-blue-300"></div>
             
             {/* Timeline events */}
-            <div className="space-y-8">
-              {/* 2018 */}
-              <div className="flex items-center">
-                <div className="w-24 font-bold text-blue-800">2018</div>
-                <div className="w-4 h-4 rounded-full bg-blue-500 z-10"></div>
-                <div className="ml-4 bg-white p-2 rounded shadow-sm flex-grow">
-                  <p>GERD diagnosis</p>
+            <div className="ml-4 space-y-6">
+              {/* Event 1 */}
+              <div className="flex">
+                <div className="flex-shrink-0 flex flex-col items-center mr-4">
+                  <div className="text-sm font-bold text-blue-600 w-20 text-right">11/2024</div>
+                  <div className="h-4 w-4 rounded-full bg-blue-400 mt-1 border-2 border-white"></div>
+                </div>
+                <div className="bg-white rounded-lg shadow p-3 flex-grow">
+                  <p className="font-semibold">Initial Onset</p>
+                  <p className="text-sm">Cough began after starting lisinopril for hypertension</p>
+                  <p className="text-sm italic mt-1">Assessment: <span className="text-yellow-600">Suspected ACE-inhibitor cough</span></p>
+                  <p className="text-sm font-semibold mt-1">Intervention: Switched to amlodipine</p>
                 </div>
               </div>
               
-              {/* 2019 */}
-              <div className="flex items-center">
-                <div className="w-24 font-bold text-blue-800">2019</div>
-                <div className="w-4 h-4 rounded-full bg-blue-500 z-10"></div>
-                <div className="ml-4 bg-white p-2 rounded shadow-sm flex-grow">
-                  <p>GAD diagnosis</p>
-                  <p>Rotator cuff surgery</p>
+              {/* Event 2 */}
+              <div className="flex">
+                <div className="flex-shrink-0 flex flex-col items-center mr-4">
+                  <div className="text-sm font-bold text-blue-600 w-20 text-right">12/02/2024</div>
+                  <div className="h-4 w-4 rounded-full bg-blue-400 mt-1 border-2 border-white"></div>
+                </div>
+                <div className="bg-white rounded-lg shadow p-3 flex-grow">
+                  <p className="font-semibold">Worsening Symptoms</p>
+                  <p className="text-sm">Chest congestion, headache, fever, appetite loss</p>
+                  <p className="text-sm italic mt-1">Assessment: <span className="text-yellow-600">Possible respiratory infection</span></p>
+                  <p className="text-sm font-semibold mt-1">Interventions:</p>
+                  <ul className="list-disc text-sm ml-5">
+                    <li>COVID test (negative)</li>
+                    <li>Chest X-ray (negative)</li>
+                    <li>Augmentin</li>
+                    <li>Medrol dose pack</li>
+                  </ul>
                 </div>
               </div>
               
-              {/* 2021 */}
-              <div className="flex items-center">
-                <div className="w-24 font-bold text-blue-800">2021</div>
-                <div className="w-4 h-4 rounded-full bg-blue-500 z-10"></div>
-                <div className="ml-4 bg-white p-2 rounded shadow-sm flex-grow">
-                  <p>Osteoarthritis diagnosis</p>
+              {/* Event 3 */}
+              <div className="flex">
+                <div className="flex-shrink-0 flex flex-col items-center mr-4">
+                  <div className="text-sm font-bold text-blue-600 w-20 text-right">02/20/2025</div>
+                  <div className="h-4 w-4 rounded-full bg-blue-400 mt-1 border-2 border-white"></div>
+                </div>
+                <div className="bg-white rounded-lg shadow p-3 flex-grow">
+                  <p className="font-semibold">Persistent Cough</p>
+                  <p className="text-sm">Continued cough with white/clear sputum, dyspnea on exertion</p>
+                  <p className="text-sm italic mt-1">Assessment: <span className="text-yellow-600">Consider allergic etiology</span></p>
+                  <p className="text-sm font-semibold mt-1">Intervention: Trial of OTC Zyrtec (cetirizine)</p>
                 </div>
               </div>
               
-              {/* 2023 */}
-              <div className="flex items-center">
-                <div className="w-24 font-bold text-blue-800">2023</div>
-                <div className="w-4 h-4 rounded-full bg-blue-500 z-10"></div>
-                <div className="ml-4 bg-white p-2 rounded shadow-sm flex-grow">
-                  <p>Vertigo diagnosis</p>
+              {/* Event 4 */}
+              <div className="flex">
+                <div className="flex-shrink-0 flex flex-col items-center mr-4">
+                  <div className="text-sm font-bold text-blue-600 w-20 text-right">02/27/2025</div>
+                  <div className="h-4 w-4 rounded-full bg-green-500 mt-1 border-2 border-white"></div>
                 </div>
-              </div>
-              
-              {/* 2024 */}
-              <div className="flex items-center">
-                <div className="w-24 font-bold text-blue-800">2024</div>
-                <div className="w-4 h-4 rounded-full bg-blue-500 z-10"></div>
-                <div className="ml-4 bg-white p-2 rounded shadow-sm flex-grow">
-                  <p>A-Fib diagnosis</p>
-                  <p>HTN diagnosis</p>
-                  <p>Hyperlipidemia diagnosis</p>
-                </div>
-              </div>
-              
-              {/* 2025 */}
-              <div className="flex items-center">
-                <div className="w-24 font-bold text-blue-800">2025</div>
-                <div className="w-4 h-4 rounded-full bg-blue-500 border-2 border-blue-600 z-10"></div>
-                <div className="ml-4 bg-white p-2 rounded shadow-sm flex-grow border-2 border-blue-200">
-                  <p>Current: Allergic Rhinitis evaluation</p>
+                <div className="bg-green-50 border-l-4 border-green-500 rounded-lg shadow p-3 flex-grow">
+                  <p className="font-semibold text-green-800">Significant Improvement</p>
+                  <p className="text-sm">Cough significantly improved with antihistamine therapy</p>
+                  <p className="text-sm italic mt-1">Assessment: <span className="text-green-600">Allergic rhinitis confirmed</span></p>
+                  <p className="text-sm font-semibold mt-1">Intervention: Spirometry test (normal) to rule out asthma</p>
                 </div>
               </div>
             </div>

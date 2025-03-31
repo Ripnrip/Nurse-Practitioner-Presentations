@@ -16,7 +16,7 @@ const ObjectivesSlide = () => {
           <div className="flex items-start space-x-4 text-white">
             <div className="flex-shrink-0 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">1</div>
             <div className="flex-grow">
-              <p className="text-lg font-chalk">Identify common causes of chronic cough in older adults</p>
+              <p className="text-lg font-chalk">Define the clinical presentation of acute, subacute, and chronic cough</p>
               <div className="mt-1 h-0.5 bg-blue-400 w-3/4 opacity-50"></div>
             </div>
           </div>
@@ -25,7 +25,7 @@ const ObjectivesSlide = () => {
           <div className="flex items-start space-x-4 text-white">
             <div className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">2</div>
             <div className="flex-grow">
-              <p className="text-lg font-chalk">Recognize the impact of comorbidities and polypharmacy on diagnosing cough</p>
+              <p className="text-lg font-chalk">Describe the pathophysiology and common etiologies associated with cough</p>
               <div className="mt-1 h-0.5 bg-green-400 w-3/4 opacity-50"></div>
             </div>
           </div>
@@ -34,7 +34,7 @@ const ObjectivesSlide = () => {
           <div className="flex items-start space-x-4 text-white">
             <div className="flex-shrink-0 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">3</div>
             <div className="flex-grow">
-              <p className="text-lg font-chalk">Discuss the diagnostic process when initial treatments fail</p>
+              <p className="text-lg font-chalk">Identify common risk factors that contribute to the development of cough</p>
               <div className="mt-1 h-0.5 bg-yellow-400 w-3/4 opacity-50"></div>
             </div>
           </div>
@@ -43,7 +43,7 @@ const ObjectivesSlide = () => {
           <div className="flex items-start space-x-4 text-white">
             <div className="flex-shrink-0 w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">4</div>
             <div className="flex-grow">
-              <p className="text-lg font-chalk">Review evidence-based management for allergic rhinitis in older adults</p>
+              <p className="text-lg font-chalk">Explain evidence-based diagnostic strategies for differentiating cough etiologies in older adults</p>
               <div className="mt-1 h-0.5 bg-purple-400 w-3/4 opacity-50"></div>
             </div>
           </div>
@@ -52,19 +52,21 @@ const ObjectivesSlide = () => {
           <div className="flex items-start space-x-4 text-white">
             <div className="flex-shrink-0 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">5</div>
             <div className="flex-grow">
-              <p className="text-lg font-chalk">Develop a patient-centered care plan for allergic rhinitis</p>
+              <p className="text-lg font-chalk">Apply a systematic approach to managing persistent cough when initial treatments fail</p>
               <div className="mt-1 h-0.5 bg-red-400 w-3/4 opacity-50"></div>
             </div>
           </div>
         </div>
-
+        
         {/* Decorative elements */}
-        <div className="absolute top-4 right-4 opacity-10 text-white text-6xl">📚</div>
-        <div className="absolute bottom-4 left-4 opacity-10 text-white text-6xl">🎓</div>
+        <div className="absolute bottom-3 right-3 flex space-x-2">
+          <div className="w-6 h-6 bg-opacity-50 rounded-full flex items-center justify-center">📚</div>
+          <div className="w-6 h-6 bg-opacity-50 rounded-full flex items-center justify-center">🎓</div>
+        </div>
         
         {/* Chalk smudges */}
-        <div className="absolute bottom-0 left-0 right-0 h-4 bg-gradient-to-t from-gray-700 opacity-30"></div>
-        <div className="absolute top-1/2 right-0 w-4 h-16 bg-gradient-to-l from-gray-700 opacity-30"></div>
+        <div className="absolute top-10 right-10 w-20 h-6 bg-white bg-opacity-5 rounded transform rotate-12"></div>
+        <div className="absolute bottom-10 left-16 w-16 h-5 bg-white bg-opacity-5 rounded transform -rotate-6"></div>
       </div>
     </div>
   );
