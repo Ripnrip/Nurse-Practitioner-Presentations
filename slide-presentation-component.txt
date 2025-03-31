@@ -14,7 +14,6 @@ import DifferentialAnalysisSlide from './slides/DifferentialAnalysisSlide';
 import WorkingDiagnosisSlide from './slides/WorkingDiagnosisSlide';
 import TreatmentAlgorithmSlide from './slides/TreatmentAlgorithmSlide';
 import PharmacologicalSlide from './slides/PharmacologicalSlide';
-import NasalSprayTechniqueSlide from './slides/NasalSprayTechniqueSlide';
 import NonPharmacologicalSlide from './slides/NonPharmacologicalSlide';
 import FollowUpSlide from './slides/FollowUpSlide';
 import BillingCodingSlide from './slides/BillingCodingSlide';
@@ -34,28 +33,27 @@ const SlidePresentation = () => {
   };
 
   const slides = [
-    { title: "Persistent Cough Leading to Allergic Rhinitis Diagnosis in an Older Adult", component: <TitleSlide /> },
+    { title: "The Diagnostic Journey of Persistent Cough in an Older Adult", component: <TitleSlide /> },
     { title: "Learning Objectives", component: <ObjectivesSlide /> },
-    { title: "Allergic Rhinitis (AR): Disease Definition & Nasal Anatomy", component: <DiseaseDefinitionSlide /> },
-    { title: "Pathophysiology of Allergic Rhinitis", component: <PathophysiologySlide /> },
-    { title: "Epidemiology & Risk Factors", component: <EpidemiologySlide /> },
-    { title: "Differential Diagnosis Comparison", component: <DifferentialDiagnosisSlide /> },
-    { title: "Patient Journey: 71-year-old Caucasian Female", component: <PatientTimelineSlide /> },
-    { title: "Patient Profile", component: <PatientProfileSlide /> },
-    { title: "Current Medications", component: <MedicationsSlide /> },
-    { title: "Physical Examination & Vitals", component: <PhysicalExamSlide /> },
-    { title: "Diagnostic Studies", component: <DiagnosticStudiesSlide /> },
-    { title: "Differential Diagnosis Analysis", component: <DifferentialAnalysisSlide /> },
-    { title: "Working Diagnosis", component: <WorkingDiagnosisSlide /> },
-    { title: "Evidence-Based Management", component: <TreatmentAlgorithmSlide /> },
-    { title: "Pharmacological Management", component: <PharmacologicalSlide /> },
-    { title: "Proper Intranasal Corticosteroid Technique", component: <NasalSprayTechniqueSlide /> },
-    { title: "Non-Pharmacological Interventions", component: <NonPharmacologicalSlide /> },
-    { title: "Patient Education & Follow-Up Plan", component: <FollowUpSlide /> },
-    { title: "Coding & Billing", component: <BillingCodingSlide /> },
-    { title: "Case Summary", component: <CaseSummarySlide /> },
+    { title: "Understanding Cough: Definition & Classification", component: <DiseaseDefinitionSlide /> },
+    { title: "Pathophysiology of Cough", component: <PathophysiologySlide /> },
+    { title: "Risk Factors & Epidemiology", component: <EpidemiologySlide /> },
+    { title: "Differential Diagnosis of Chronic Cough", component: <DifferentialDiagnosisSlide /> },
+    { title: "Patient Journey Timeline", component: <PatientTimelineSlide /> },
+    { title: "Patient Profile & History", component: <PatientProfileSlide /> },
+    { title: "Current Medications & Allergies", component: <MedicationsSlide /> },
+    { title: "Physical Examination Findings", component: <PhysicalExamSlide /> },
+    { title: "Diagnostic Studies & Workup", component: <DiagnosticStudiesSlide /> },
+    { title: "Differential Analysis", component: <DifferentialAnalysisSlide /> },
+    { title: "Working Diagnosis & Clinical Reasoning", component: <WorkingDiagnosisSlide /> },
+    { title: "Evidence-Based Management Algorithm", component: <TreatmentAlgorithmSlide /> },
+    { title: "Treatment Goals & Approach", component: <PharmacologicalSlide /> },
+    { title: "Non-Pharmacological Management", component: <NonPharmacologicalSlide /> },
+    { title: "Follow-Up Plan & Patient Education", component: <FollowUpSlide /> },
+    { title: "Coding & Billing Considerations", component: <BillingCodingSlide /> },
+    { title: "Case Summary & Key Takeaways", component: <CaseSummarySlide /> },
     { title: "References", component: <ReferencesSlide /> },
-    { title: "Questions?", component: <QuestionsSlide /> }
+    { title: "Questions & Discussion", component: <QuestionsSlide /> }
   ];
 
   return (
@@ -71,7 +69,7 @@ const SlidePresentation = () => {
           </button>
           <div className="text-center">
             <p className="text-sm">Slide {currentSlide + 1} of {slides.length}</p>
-            <h2 className="text-lg font-semibold">Allergic Rhinitis Case Study</h2>
+            <h2 className="text-lg font-semibold">Persistent Cough Case Study</h2>
           </div>
           <button 
             onClick={goToNextSlide}

@@ -4,29 +4,72 @@ const PathophysiologySlide = () => {
   return (
     <div className="flex flex-col md:flex-row">
       <div className="md:w-1/2 pr-4">
-        <p className="text-xl font-semibold mb-3">Immunologic Mechanisms</p>
+        <h2 className="text-2xl font-bold mb-4">Pathophysiology</h2>
         
-        <p className="font-semibold mt-3">Early Phase Response:</p>
-        <ul className="list-disc pl-8 space-y-1">
-          <li>Allergen exposure → IgE-mediated mast cell activation</li>
-          <li>Release of histamine, leukotrienes, prostaglandins</li>
-          <li>Symptoms develop within minutes: sneezing, itching, rhinorrhea</li>
-        </ul>
-        
-        <p className="font-semibold mt-4">Late Phase Response:</p>
-        <ul className="list-disc pl-8 space-y-1">
-          <li>Occurs 4-8 hours after exposure</li>
-          <li>Infiltration of inflammatory cells (eosinophils, basophils, T-cells)</li>
-          <li>Predominant symptom: nasal congestion</li>
-        </ul>
+        <div className="bg-blue-50 p-4 rounded-lg mb-6">
+          <h3 className="text-xl font-semibold mb-3">Cough Reflex Pathway</h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Initiated by stimulation of sensory receptors in respiratory tract</li>
+            <li>Primarily mediated via the vagus nerve</li>
+            <li>Modulated by higher central nervous system input</li>
+            <li>Involves coordination of:
+              <ul className="list-circle pl-6 mt-1">
+                <li>Glottis</li>
+                <li>Chest muscles</li>
+                <li>Accessory respiratory muscles</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-lg p-4">
+          <h3 className="text-xl font-semibold mb-3">Epidemiology</h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Can occur at any age</li>
+            <li>Chronic cough more prevalent in:
+              <ul className="list-circle pl-6 mt-1">
+                <li>Adults aged 50-60 years</li>
+                <li>Women (heightened cough reflex sensitivity)</li>
+              </ul>
+            </li>
+            <li>Common symptom in primary care settings</li>
+          </ul>
+        </div>
       </div>
+      
       <div className="md:w-1/2 mt-4 md:mt-0">
-        <img 
-          src="https://www.researchgate.net/profile/Heather-Lehman/publication/343777508/figure/fig1/AS:926250477797376@1597873576096/Inflammatory-response-in-allergic-rhinitis-Allergens-activate-mast-cells-through-IgE.png" 
-          alt="Allergic reaction mechanism" 
-          className="w-full rounded-lg shadow-lg"
-        />
-        <p className="text-sm italic text-center mt-2">Allergic Reaction Mechanism: Showing IgE-mediated mast cell activation and inflammatory cascade</p>
+        <div className="bg-white rounded-lg shadow-lg p-4">
+          <h3 className="text-xl font-semibold mb-3 text-center">Underlying Mechanisms</h3>
+          <div className="space-y-4">
+            <div>
+              <h4 className="font-semibold">Protective Function:</h4>
+              <ul className="list-disc pl-6">
+                <li>Clears airways of irritants</li>
+                <li>Removes excess secretions</li>
+                <li>Expels foreign substances</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="font-semibold">Pathologic Response:</h4>
+              <ul className="list-disc pl-6">
+                <li>Hypersensitivity of cough receptors</li>
+                <li>Inflammatory mediators</li>
+                <li>Neural pathway alterations</li>
+                <li>Structural airway changes</li>
+              </ul>
+            </div>
+            
+            <div className="mt-4">
+              <img 
+                src="/images/cough-reflex-pathway.jpg" 
+                alt="Cough reflex neural pathway" 
+                className="w-full rounded-lg"
+              />
+              <p className="text-sm italic text-center mt-2">Neural pathways involved in the cough reflex</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

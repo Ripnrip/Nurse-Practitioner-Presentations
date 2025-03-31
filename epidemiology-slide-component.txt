@@ -4,52 +4,67 @@ const EpidemiologySlide = () => {
   return (
     <div className="flex flex-col md:flex-row">
       <div className="md:w-1/2 pr-4">
-        <p className="text-xl font-semibold mb-3">Prevalence:</p>
-        <ul className="list-disc pl-8 space-y-1">
-          <li>Affects ~15-30% of population</li>
-          <li>~32% of adults aged 54-89 report rhinitis symptoms</li>
-          <li>Peak incidence in 2nd-4th decades, gradually declining</li>
-        </ul>
+        <h2 className="text-2xl font-bold mb-4">Risk Factors</h2>
         
-        <p className="text-xl font-semibold mt-4">Risk Factors:</p>
-        <ul className="list-disc pl-8 space-y-1">
-          <li>Genetic predisposition (family history)</li>
-          <li>Environmental allergen exposure</li>
-          <li>Occupational exposures</li>
-          <li>Climate and geographic factors</li>
-          <li>Comorbid conditions (asthma, eczema)</li>
-        </ul>
+        <div className="space-y-6">
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <h3 className="text-xl font-semibold mb-3">Behavioral & Environmental</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Cigarette smoking</li>
+              <li>Environmental or occupational exposure
+                <ul className="list-circle pl-6 mt-1">
+                  <li>Dust</li>
+                  <li>Chemicals</li>
+                  <li>Pollutants</li>
+                </ul>
+              </li>
+              <li>Living in congregate settings</li>
+              <li>Foreign travel (TB risk)</li>
+            </ul>
+          </div>
+
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <h3 className="text-xl font-semibold mb-3">Medical Conditions</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Recent upper respiratory infection</li>
+              <li>GERD</li>
+              <li>Allergic rhinitis or postnasal drip</li>
+              <li>Asthma or COPD</li>
+              <li>Immunocompromised status (e.g., HIV)</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div className="md:w-1/2 mt-4 md:mt-0 flex flex-col justify-center">
-        <div className="bg-blue-50 p-4 rounded-lg shadow">
-          <div className="text-center mb-4 font-semibold">Prevalence of Allergic Rhinitis by Age Group</div>
-          <div className="h-64 w-full relative">
-            <div className="absolute bottom-0 left-0 w-16 h-16 bg-blue-300 ml-2">
-              <div className="text-xs text-center mt-1">0-20 yrs</div>
-              <div className="text-xs text-center font-bold">16%</div>
+      
+      <div className="md:w-1/2 mt-4 md:mt-0">
+        <div className="bg-white rounded-lg shadow-lg p-4">
+          <h3 className="text-xl font-semibold mb-3 text-center">Additional Risk Factors</h3>
+          
+          <div className="space-y-6">
+            <div>
+              <h4 className="font-semibold mb-2">Age-Related Factors:</h4>
+              <ul className="list-disc pl-6">
+                <li>Older age (weakened cough reflex)</li>
+                <li>History of stroke</li>
+              </ul>
             </div>
-            <div className="absolute bottom-0 left-20 w-16 h-24 bg-blue-400 ml-2">
-              <div className="text-xs text-center mt-1">20-40 yrs</div>
-              <div className="text-xs text-center font-bold">24%</div>
+            
+            <div>
+              <h4 className="font-semibold mb-2">Medication-Related:</h4>
+              <ul className="list-disc pl-6">
+                <li>Use of ACE inhibitors</li>
+                <li>Multiple medication use (polypharmacy)</li>
+              </ul>
             </div>
-            <div className="absolute bottom-0 left-40 w-16 h-32 bg-blue-500 ml-2">
-              <div className="text-xs text-center mt-1">40-60 yrs</div>
-              <div className="text-xs text-center font-bold">32%</div>
+            
+            <div className="mt-6">
+              <img 
+                src="/images/risk-factors-diagram.jpg" 
+                alt="Risk factors visualization" 
+                className="w-full rounded-lg"
+              />
+              <p className="text-sm italic text-center mt-2">Interplay of various risk factors in cough development</p>
             </div>
-            <div className="absolute bottom-0 left-60 w-16 h-24 bg-blue-400 ml-2">
-              <div className="text-xs text-center mt-1">60-80 yrs</div>
-              <div className="text-xs text-center font-bold">24%</div>
-            </div>
-            <div className="absolute bottom-0 left-80 w-16 h-16 bg-blue-300 ml-2">
-              <div className="text-xs text-center mt-1">80+ yrs</div>
-              <div className="text-xs text-center font-bold">16%</div>
-            </div>
-            <div className="absolute left-0 bottom-0 w-full h-px bg-black"></div>
-            <div className="absolute left-0 bottom-0 h-full w-px bg-black"></div>
-            <div className="absolute -left-10 top-0 text-xs">40%</div>
-            <div className="absolute -left-10 top-16 text-xs">30%</div>
-            <div className="absolute -left-10 top-32 text-xs">20%</div>
-            <div className="absolute -left-10 top-48 text-xs">10%</div>
           </div>
         </div>
       </div>

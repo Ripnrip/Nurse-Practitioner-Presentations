@@ -3,19 +3,17 @@ import React from 'react';
 const ObjectivesSlide = () => {
   return (
     <div className="flex flex-col space-y-4">
-      <p className="text-xl font-semibold mb-4">By the end of this presentation, participants will be able to:</p>
-      <ul className="list-disc pl-8 space-y-2">
-        <li className="text-lg">Identify common causes of chronic cough in older adults</li>
-        <li className="text-lg">Recognize the impact of comorbidities and polypharmacy on diagnosing cough</li>
-        <li className="text-lg">Discuss the diagnostic process when initial treatments fail</li>
-        <li className="text-lg">Review evidence-based management for allergic rhinitis in older adults</li>
-        <li className="text-lg">Develop a patient-centered care plan for allergic rhinitis</li>
+      <h2 className="text-2xl font-bold mb-4">Learning Objectives</h2>
+      <ul className="list-disc pl-8 space-y-3">
+        <li className="text-lg">Define the clinical presentation of acute, subacute, and chronic cough</li>
+        <li className="text-lg">Describe the pathophysiology and common etiologies associated with cough</li>
+        <li className="text-lg">Identify common risk factors that contribute to the development of cough</li>
+        <li className="text-lg">Explain evidence-based diagnostic strategies and treatment approaches for different types of cough</li>
+        <li className="text-lg">Develop an appropriate follow-up plan including patient education and prevention strategies</li>
       </ul>
-      <img 
-        src="https://images.unsplash.com/photo-1571260899304-425eee4c7efd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80" 
-        alt="Learning objectives background" 
-        className="w-full max-w-2xl rounded-lg shadow-lg mt-4 mx-auto"
-      />
+      <div className="mt-6 text-sm text-gray-600 italic">
+        <p>Note: This presentation focuses on a Patient of the Day (POTD) case study demonstrating the complexity of cough management in clinical practice.</p>
+      </div>
     </div>
   );
 };

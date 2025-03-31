@@ -2,106 +2,70 @@ import React from 'react';
 
 const PharmacologicalSlide = () => {
   return (
-    <div>
-      <div className="overflow-x-auto">
-        <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-lg">
-          <thead>
-            <tr className="bg-blue-100">
-              <th className="py-2 px-3 text-left">Therapy</th>
-              <th className="py-2 px-3 text-left">Recommendation</th>
-              <th className="py-2 px-3 text-left">Rationale</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-t bg-blue-50">
-              <td className="py-2 px-3 font-semibold">Antihistamine</td>
-              <td className="py-2 px-3">
-                Continue Cetirizine (Zyrtec) 10 mg daily
-              </td>
-              <td className="py-2 px-3">
-                <ul className="list-disc pl-4">
-                  <li>Proven effective for patient</li>
-                  <li>Second-generation = less sedation</li>
-                  <li>Safer for older adults</li>
+    <div className="flex flex-col md:flex-row">
+      <div className="md:w-1/2 pr-4">
+        <h2 className="text-2xl font-bold mb-4">Goals of Therapy</h2>
+        
+        <div className="space-y-6">
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <h3 className="text-xl font-semibold mb-3">Primary Goals</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Identify and treat the underlying cause</li>
+              <li>Reduce frequency and severity of coughing episodes</li>
+              <li>Prevent complications</li>
+              <li>Improve quality of life</li>
+            </ul>
+          </div>
+
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <h3 className="text-xl font-semibold mb-3">Prevention Strategies</h3>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Educate on modifiable risk factors
+                <ul className="list-circle pl-6 mt-1">
+                  <li>Smoking cessation</li>
+                  <li>Environmental modifications</li>
+                  <li>Lifestyle changes</li>
                 </ul>
-              </td>
-            </tr>
-            <tr className="border-t">
-              <td className="py-2 px-3 font-semibold">Intranasal Corticosteroid</td>
-              <td className="py-2 px-3">
-                Consider adding if symptoms persist<br/>
-                Fluticasone propionate 50mcg/spray<br/>
-                1-2 sprays/nostril daily
-              </td>
-              <td className="py-2 px-3">
-                <ul className="list-disc pl-4">
-                  <li>First-line therapy per guidelines</li>
-                  <li>Effective for persistent symptoms</li>
-                  <li>Target local inflammation</li>
-                </ul>
-              </td>
-            </tr>
-            <tr className="border-t bg-red-50">
-              <td className="py-2 px-3 font-semibold">Avoid</td>
-              <td className="py-2 px-3">
-                First-generation antihistamines<br/>
-                (e.g., diphenhydramine)
-              </td>
-              <td className="py-2 px-3">
-                <ul className="list-disc pl-4">
-                  <li>Risk of anticholinergic effects</li>
-                  <li>May cause sedation, confusion</li>
-                  <li>Potentially harmful in elderly</li>
-                </ul>
-              </td>
-            </tr>
-            <tr className="border-t">
-              <td className="py-2 px-3 font-semibold">Chronic Medications</td>
-              <td className="py-2 px-3">
-                Continue all current therapies
-              </td>
-              <td className="py-2 px-3">
-                <ul className="list-disc pl-4">
-                  <li>Monitor for interactions</li>
-                  <li>Ensure adequate supply</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              </li>
+              <li>Prevent recurrence or chronicity</li>
+            </ul>
+          </div>
+        </div>
       </div>
       
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="bg-blue-50 p-3 rounded-lg shadow border-l-4 border-blue-500">
-          <p className="font-semibold">Medication Selection Considerations:</p>
-          <ul className="list-disc pl-6 mt-2 text-sm">
-            <li>Patient age and comorbidities</li>
-            <li>Drug interactions with current medications</li>
-            <li>Historical response to treatments</li>
-            <li>Cost and insurance coverage</li>
-          </ul>
-        </div>
-        
-        <div className="bg-blue-50 p-3 rounded-lg shadow border-l-4 border-blue-500">
-          <p className="font-semibold">Second-Generation Antihistamines:</p>
-          <ul className="list-disc pl-6 mt-2 text-sm">
-            <li>Cetirizine (Zyrtec)</li>
-            <li>Loratadine (Claritin)</li>
-            <li>Fexofenadine (Allegra)</li>
-            <li>Levocetirizine (Xyzal)</li>
-            <li>Less sedating, better safety profile</li>
-          </ul>
-        </div>
-        
-        <div className="bg-blue-50 p-3 rounded-lg shadow border-l-4 border-blue-500">
-          <p className="font-semibold">Intranasal Corticosteroids:</p>
-          <ul className="list-disc pl-6 mt-2 text-sm">
-            <li>Fluticasone propionate (Flonase)</li>
-            <li>Mometasone furoate (Nasonex)</li>
-            <li>Budesonide (Rhinocort)</li>
-            <li>Triamcinolone (Nasacort)</li>
-            <li>Most effective for nasal symptoms</li>
-          </ul>
+      <div className="md:w-1/2 mt-4 md:mt-0">
+        <div className="bg-white rounded-lg shadow-lg p-4">
+          <h3 className="text-xl font-semibold mb-3 text-center">Treatment Approach</h3>
+          
+          <div className="space-y-6">
+            <div className="bg-blue-50 p-3 rounded-lg">
+              <h4 className="font-semibold mb-2">Acute Management:</h4>
+              <ul className="list-disc pl-6">
+                <li>Supportive care measures</li>
+                <li>Symptom-specific interventions</li>
+                <li>Patient education and counseling</li>
+              </ul>
+            </div>
+            
+            <div className="bg-blue-50 p-3 rounded-lg">
+              <h4 className="font-semibold mb-2">Long-term Management:</h4>
+              <ul className="list-disc pl-6">
+                <li>Regular monitoring and follow-up</li>
+                <li>Adjustment of treatment as needed</li>
+                <li>Management of comorbidities</li>
+                <li>Prevention of complications</li>
+              </ul>
+            </div>
+            
+            <div className="mt-4">
+              <img 
+                src="/images/treatment-goals.jpg" 
+                alt="Treatment goals visualization" 
+                className="w-full rounded-lg"
+              />
+              <p className="text-sm italic text-center mt-2">Comprehensive approach to achieving therapeutic goals in cough management</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

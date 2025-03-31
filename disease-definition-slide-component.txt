@@ -4,32 +4,51 @@ const DiseaseDefinitionSlide = () => {
   return (
     <div className="flex flex-col md:flex-row">
       <div className="md:w-1/2 pr-4">
-        <p className="text-xl font-semibold mb-4">Definition:</p>
-        <p className="mb-3">Inflammation of the nasal mucosa triggered by IgE-mediated responses to allergens</p>
+        <h2 className="text-2xl font-bold mb-4">Disease Definition</h2>
+        <div className="bg-blue-50 p-4 rounded-lg mb-6">
+          <p className="mb-4">Cough is a protective reflex that helps clear the airways of irritants, secretions, or foreign substances. It can be voluntary or involuntary and is a common clinical symptom prompting medical evaluation.</p>
+        </div>
         
-        <p className="text-xl font-semibold mt-4">Key Features:</p>
-        <ul className="list-disc pl-8 space-y-1">
-          <li>Nasal congestion</li>
-          <li>Clear rhinorrhea</li>
-          <li>Sneezing</li>
-          <li>Nasal itching</li>
-          <li>Postnasal drip</li>
-        </ul>
-        
-        <p className="text-xl font-semibold mt-4">Classification:</p>
-        <ul className="list-disc pl-8 space-y-1">
-          <li>Seasonal (20%)</li>
-          <li>Perennial (40%)</li>
-          <li>Mixed features (40%)</li>
-        </ul>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-xl font-semibold mb-3">Classification by Duration:</h3>
+            <ul className="list-disc pl-8 space-y-2">
+              <li><span className="font-semibold">Acute:</span> &lt;3 weeks</li>
+              <li><span className="font-semibold">Subacute:</span> 3–8 weeks</li>
+              <li><span className="font-semibold">Chronic:</span> &gt;8 weeks</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-xl font-semibold mb-3">Types:</h3>
+            <ul className="list-disc pl-8 space-y-2">
+              <li><span className="font-semibold">Productive:</span> With sputum (wet)</li>
+              <li><span className="font-semibold">Nonproductive:</span> Without sputum (dry)</li>
+            </ul>
+          </div>
+        </div>
       </div>
+      
       <div className="md:w-1/2 mt-4 md:mt-0">
-        <img 
-          src="https://www.researchgate.net/profile/Kornkiat-Snidvongs/publication/329953813/figure/fig1/AS:708392734244864@1545917441703/Illustration-of-normal-nasal-anatomy-including-the-nasal-septum-inferior-turbinate.png" 
-          alt="Nasal anatomy diagram" 
-          className="w-full rounded-lg shadow-lg"
-        />
-        <p className="text-sm italic text-center mt-2">Nasal Anatomy Diagram: Showing the nasal septum, turbinates, and paranasal sinuses</p>
+        <div className="bg-white rounded-lg shadow-lg p-4">
+          <h3 className="text-xl font-semibold mb-3 text-center">Common Underlying Pathologies</h3>
+          <ul className="list-disc pl-8 space-y-2">
+            <li>Infections (common cold, pneumonia, TB)</li>
+            <li>Inflammatory conditions (asthma, COPD)</li>
+            <li>Environmental exposures</li>
+            <li>Medication side effects (e.g., ACE inhibitors)</li>
+            <li>Upper Airway Cough Syndrome (UACS)</li>
+            <li>Gastroesophageal reflux disease (GERD)</li>
+          </ul>
+          <div className="mt-4">
+            <img 
+              src="/images/cough-mechanism.jpg" 
+              alt="Cough reflex mechanism diagram" 
+              className="w-full rounded-lg"
+            />
+            <p className="text-sm italic text-center mt-2">Diagram showing the cough reflex pathway and key anatomical structures involved</p>
+          </div>
+        </div>
       </div>
     </div>
   );
