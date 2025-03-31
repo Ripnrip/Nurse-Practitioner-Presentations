@@ -2,26 +2,66 @@ import React from 'react';
 
 const ReferencesSlide = () => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg">
-      <p className="text-xl font-semibold mb-4">References:</p>
+    <div className="space-y-6">
+      <div className="bg-white p-6 rounded-lg shadow-md">
+        <h3 className="text-xl font-bold text-blue-700 mb-4 text-center">References</h3>
+        
+        <div className="space-y-4">
+          <div className="p-3 bg-blue-50 rounded-lg">
+            <p className="text-sm">
+              Kennedy-Malone, L., & Duffy, E. G. (2022). <span className="italic">Advanced practice nursing in the care of older adults</span>. F.A. Davis Company.
+            </p>
+          </div>
+          
+          <div className="p-3 bg-blue-50 rounded-lg">
+            <p className="text-sm">
+              Sonoda, K., & Nayak, R. (2024). Chronic cough: Evaluation and management. <span className="italic">American Family Physician, 110</span>(2), 167–173.
+            </p>
+          </div>
+          
+          <div className="p-3 bg-blue-50 rounded-lg">
+            <p className="text-sm">
+              Weinberger, S. E., & Saukkonen, K. (2025). Evaluation and treatment of subacute and chronic cough in adults. <span className="italic">UpToDate</span>. Retrieved March 30, 2025, from https://www.uptodate.com/contents/evaluation-and-treatment-of-subacute-and-chronic-cough-in-adults
+            </p>
+          </div>
+        </div>
+      </div>
       
-      <ul className="space-y-4 text-sm">
-        <li>
-          Ellis, A. K., Corren, J., Hussain, Z., & Feldweg, A. M. (2025, March 25). Allergic rhinitis. In T. W. Post (Ed.), <em>UpToDate</em>. Retrieved March 30, 2025, from https://www.uptodate.com
-        </li>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="bg-white p-4 rounded-lg shadow-md">
+          <h3 className="text-lg font-bold text-blue-700 mb-3">Clinical Guidelines</h3>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>
+              American College of Chest Physicians (CHEST) guidelines on cough management
+            </li>
+            <li>
+              European Respiratory Society (ERS) guidelines on chronic cough
+            </li>
+            <li>
+              American Academy of Allergy, Asthma & Immunology (AAAAI) practice parameters
+            </li>
+          </ul>
+        </div>
         
-        <li>
-          Kennedy-Malone, L., & Duffy, E. G. (2022). <em>Advanced practice nursing in the care of older adults</em> (3rd ed.). F.A. Davis Company.
-        </li>
-        
-        <li>
-          Seidman, M. D., Gurgel, R. K., Lin, S. Y., Schwartz, S. R., Baroody, F. M., Bonner, J. R., ... & Nnacheta, L. C. (2015). Clinical practice guideline: Allergic rhinitis. <em>Otolaryngology–Head and Neck Surgery</em>, <em>152</em>(1_suppl), S1–S43. https://doi.org/10.1177/0194599814561600
-        </li>
-        
-        <li>
-          Wallace DV, Dykewicz MS, Oppenheimer J, et al. Pharmacologic treatment of seasonal allergic rhinitis: synopsis of guidance from the 2017 joint task force on practice parameters. <em>Ann Intern Med</em>. 2017;167(12):876-881.
-        </li>
-      </ul>
+        <div className="bg-white p-4 rounded-lg shadow-md">
+          <h3 className="text-lg font-bold text-blue-700 mb-3">Additional Resources</h3>
+          <ul className="list-disc pl-5 space-y-2 text-sm">
+            <li>
+              American Lung Association: Resources for patients and providers on chronic cough management
+            </li>
+            <li>
+              National Heart, Lung, and Blood Institute (NHLBI): Educational materials on respiratory conditions
+            </li>
+            <li>
+              Centers for Disease Control and Prevention (CDC): Guidance on respiratory infection prevention
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <p className="text-xs text-center text-gray-500">
+        Note: This presentation is for educational purposes only. Always consult current clinical guidelines and primary literature for the most up-to-date information.
+      </p>
     </div>
   );
 };

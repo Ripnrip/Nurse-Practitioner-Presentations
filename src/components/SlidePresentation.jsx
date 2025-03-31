@@ -3,24 +3,22 @@ import TitleSlide from './slides/TitleSlide';
 import ObjectivesSlide from './slides/ObjectivesSlide';
 import DiseaseDefinitionSlide from './slides/DiseaseDefinitionSlide';
 import PathophysiologySlide from './slides/PathophysiologySlide';
-import EpidemiologySlide from './slides/EpidemiologySlide';
-import DifferentialDiagnosisSlide from './slides/DifferentialDiagnosisSlide';
-import PatientTimelineSlide from './slides/PatientTimelineSlide';
-import PatientProfileSlide from './slides/PatientProfileSlide';
-import MedicationsSlide from './slides/MedicationsSlide';
-import PhysicalExamSlide from './slides/PhysicalExamSlide';
-import DiagnosticStudiesSlide from './slides/DiagnosticStudiesSlide';
-import DifferentialAnalysisSlide from './slides/DifferentialAnalysisSlide';
-import WorkingDiagnosisSlide from './slides/WorkingDiagnosisSlide';
-import TreatmentAlgorithmSlide from './slides/TreatmentAlgorithmSlide';
-import PharmacologicalSlide from './slides/PharmacologicalSlide';
-import NasalSprayTechniqueSlide from './slides/NasalSprayTechniqueSlide';
-import NonPharmacologicalSlide from './slides/NonPharmacologicalSlide';
+import RiskFactorsSlide from './slides/RiskFactorsSlide';
+import GoalsOfTherapySlide from './slides/GoalsOfTherapySlide';
+import DiagnosticsSlide from './slides/DiagnosticsSlide';
+import TreatmentGuidelinesSlide from './slides/TreatmentGuidelinesSlide';
 import FollowUpSlide from './slides/FollowUpSlide';
-import BillingCodingSlide from './slides/BillingCodingSlide';
-import CaseSummarySlide from './slides/CaseSummarySlide';
+import CaseStudySlide from './slides/CaseStudySlide';
+import PatientHistorySlide from './slides/PatientHistorySlide';
+import ROSSlide from './slides/ROSSlide';
+import VitalSignsSlide from './slides/VitalSignsSlide';
+import PhysicalExamSlide from './slides/PhysicalExamSlide';
+import AssessmentSlide from './slides/AssessmentSlide';
+import TreatmentPlanSlide from './slides/TreatmentPlanSlide';
+import EducationSlide from './slides/EducationSlide';
+import ReferralSlide from './slides/ReferralSlide';
+import BillingSlide from './slides/BillingSlide';
 import ReferencesSlide from './slides/ReferencesSlide';
-import QuestionsSlide from './slides/QuestionsSlide';
 
 const SlidePresentation = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -34,28 +32,26 @@ const SlidePresentation = () => {
   };
 
   const slides = [
-    { title: "Chronic Cough Case Study in an Older Adult", component: <TitleSlide /> },
-    { title: "Learning Objectives", component: <ObjectivesSlide /> },
-    { title: "Chronic Cough: Disease Definition & Classification", component: <DiseaseDefinitionSlide /> },
-    { title: "Pathophysiology of Chronic Cough", component: <PathophysiologySlide /> },
-    { title: "Epidemiology & Risk Factors", component: <EpidemiologySlide /> },
-    { title: "Differential Diagnosis Comparison", component: <DifferentialDiagnosisSlide /> },
-    { title: "Patient Journey: 71-year-old Caucasian Female", component: <PatientTimelineSlide /> },
-    { title: "Patient Profile", component: <PatientProfileSlide /> },
-    { title: "Current Medications", component: <MedicationsSlide /> },
-    { title: "Physical Examination & Vitals", component: <PhysicalExamSlide /> },
-    { title: "Diagnostic Studies", component: <DiagnosticStudiesSlide /> },
-    { title: "Differential Diagnosis Analysis", component: <DifferentialAnalysisSlide /> },
-    { title: "Working Diagnosis", component: <WorkingDiagnosisSlide /> },
-    { title: "Evidence-Based Management", component: <TreatmentAlgorithmSlide /> },
-    { title: "Pharmacological Management", component: <PharmacologicalSlide /> },
-    { title: "Proper Inhaler & Medication Technique", component: <NasalSprayTechniqueSlide /> },
-    { title: "Non-Pharmacological Interventions", component: <NonPharmacologicalSlide /> },
-    { title: "Patient Education & Follow-Up Plan", component: <FollowUpSlide /> },
-    { title: "Coding & Billing", component: <BillingCodingSlide /> },
-    { title: "Case Summary", component: <CaseSummarySlide /> },
-    { title: "References", component: <ReferencesSlide /> },
-    { title: "Questions?", component: <QuestionsSlide /> }
+    { title: "I. Cough Management in Primary Care", component: <TitleSlide /> },
+    { title: "II. Learning Objectives", component: <ObjectivesSlide /> },
+    { title: "III. Brief Definition of Cough", component: <DiseaseDefinitionSlide /> },
+    { title: "IV. Pathophysiology & Epidemiology", component: <PathophysiologySlide /> },
+    { title: "V. Common Risk Factors", component: <RiskFactorsSlide /> },
+    { title: "VI. Goals of Therapy", component: <GoalsOfTherapySlide /> },
+    { title: "VII. Recommended Diagnostics", component: <DiagnosticsSlide /> },
+    { title: "VIII. Treatment Guidelines", component: <TreatmentGuidelinesSlide /> },
+    { title: "IX. Follow-Up & Education Recommendations", component: <FollowUpSlide /> },
+    { title: "X. Case Study", component: <CaseStudySlide /> },
+    { title: "XI. Subjective: Patient History", component: <PatientHistorySlide /> },
+    { title: "XII. Subjective: Review of Systems", component: <ROSSlide /> },
+    { title: "XIII. Objective: Vital Signs & Diagnostics", component: <VitalSignsSlide /> },
+    { title: "XIV. Objective: Physical Examination", component: <PhysicalExamSlide /> },
+    { title: "XV. Assessment: Differential & Working Diagnoses", component: <AssessmentSlide /> },
+    { title: "XVI. Evidence-Based Treatment Plan", component: <TreatmentPlanSlide /> },
+    { title: "XVII. Patient Education", component: <EducationSlide /> },
+    { title: "XVIII. Follow-Up & Referral Criteria", component: <ReferralSlide /> },
+    { title: "XIX. Pertinent Billing", component: <BillingSlide /> },
+    { title: "XX. References", component: <ReferencesSlide /> }
   ];
 
   return (
@@ -71,7 +67,7 @@ const SlidePresentation = () => {
           </button>
           <div className="text-center">
             <p className="text-sm">Slide {currentSlide + 1} of {slides.length}</p>
-            <h2 className="text-lg font-semibold">Chronic Cough Case Study</h2>
+            <h2 className="text-lg font-semibold">Cough Management in Primary Care</h2>
           </div>
           <button 
             onClick={goToNextSlide}

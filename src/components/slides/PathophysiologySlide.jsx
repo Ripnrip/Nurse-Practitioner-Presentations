@@ -2,77 +2,46 @@ import React from 'react';
 
 const PathophysiologySlide = () => {
   return (
-    <div className="flex flex-col md:flex-row">
-      <div className="md:w-1/2 pr-4">
-        <p className="text-xl font-semibold mb-3">Immunologic Mechanisms</p>
-        
-        <p className="font-semibold mt-3">Early Phase Response:</p>
-        <ul className="list-disc pl-8 space-y-1">
-          <li>Allergen exposure → IgE-mediated mast cell activation</li>
-          <li>Release of histamine, leukotrienes, prostaglandins</li>
-          <li>Symptoms develop within minutes: sneezing, itching, rhinorrhea</li>
-        </ul>
-        
-        <p className="font-semibold mt-4">Late Phase Response:</p>
-        <ul className="list-disc pl-8 space-y-1">
-          <li>Occurs 4-8 hours after exposure</li>
-          <li>Infiltration of inflammatory cells (eosinophils, basophils, T-cells)</li>
-          <li>Predominant symptom: nasal congestion</li>
-        </ul>
+    <div className="space-y-6">
+      <div className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+        <p className="text-lg">
+          The cough reflex is initiated by stimulation of sensory receptors in the respiratory tract, mediated 
+          primarily via the vagus nerve, and modulated by higher central nervous system input. It involves 
+          the glottis, chest muscles, and accessory respiratory muscles. While cough can occur at any 
+          age, chronic cough is more prevalent in adults aged 50–60 years, particularly among women 
+          who have heightened cough reflex sensitivity.
+        </p>
       </div>
-      <div className="md:w-1/2 mt-4 md:mt-0">
-        <div className="w-full rounded-lg shadow-lg bg-white p-6">
-          <div className="relative">
-            {/* Allergen */}
-            <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-yellow-100 rounded-full p-4 border-2 border-yellow-400">
-              <div className="text-center">
-                <span className="text-2xl">🌿</span>
-                <p className="text-xs font-semibold mt-1">Allergen</p>
-              </div>
-            </div>
-            
-            {/* Arrow down */}
-            <div className="h-16 w-0.5 bg-gray-400 mx-auto my-4 relative top-20">
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 rotate-45 w-2 h-2 bg-gray-400"></div>
-            </div>
-            
-            {/* IgE and Mast Cell */}
-            <div className="mt-32 bg-blue-50 rounded-lg p-4 border-2 border-blue-200">
-              <div className="flex items-center justify-center space-x-4">
-                <div className="text-center">
-                  <span className="text-xl">🔵</span>
-                  <p className="text-xs">IgE</p>
-                </div>
-                <div className="text-center">
-                  <span className="text-xl">⚡</span>
-                </div>
-                <div className="text-center">
-                  <span className="text-xl">🔴</span>
-                  <p className="text-xs">Mast Cell</p>
-                </div>
-              </div>
-            </div>
-            
-            {/* Arrow down */}
-            <div className="h-16 w-0.5 bg-gray-400 mx-auto my-4">
-              <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 rotate-45 w-2 h-2 bg-gray-400"></div>
-            </div>
-            
-            {/* Mediators */}
-            <div className="bg-red-50 rounded-lg p-4 border-2 border-red-200">
-              <div className="text-center">
-                <p className="font-semibold text-sm">Inflammatory Mediators</p>
-                <div className="flex justify-center space-x-2 mt-2">
-                  <span>💊</span>
-                  <span>🧬</span>
-                  <span>🔬</span>
-                </div>
-                <p className="text-xs mt-2">Histamine, Leukotrienes, Prostaglandins</p>
-              </div>
-            </div>
-          </div>
+
+      <div className="mt-4 bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-500">
+        <p className="text-lg">
+          Cough is a symptom rather than a disease and can result from various underlying pathologies 
+          such as infections (e.g., common cold, pneumonia, TB), inflammatory conditions (e.g., asthma, 
+          COPD), environmental exposures, or medication side effects (e.g., ACE inhibitors).
+        </p>
+      </div>
+      
+      <div className="mt-6 flex flex-col md:flex-row gap-4">
+        <div className="flex-1 bg-blue-50 p-4 rounded-lg shadow-md">
+          <h3 className="text-lg font-bold text-blue-700 mb-3">Cough Reflex Pathway</h3>
+          <ol className="list-decimal pl-5 space-y-2">
+            <li>Stimulation of cough receptors in airways</li>
+            <li>Afferent signal transmission via vagus nerve</li>
+            <li>Processing in the medulla's cough center</li>
+            <li>Efferent signals to respiratory muscles</li>
+            <li>Coordinated muscle action producing cough</li>
+          </ol>
         </div>
-        <p className="text-sm italic text-center mt-2">Allergic Reaction Mechanism: Showing IgE-mediated mast cell activation and inflammatory cascade</p>
+        
+        <div className="flex-1 bg-blue-50 p-4 rounded-lg shadow-md">
+          <h3 className="text-lg font-bold text-blue-700 mb-3">Epidemiological Factors</h3>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>More prevalent in adults aged 50-60 years</li>
+            <li>Higher incidence in women (heightened cough reflex sensitivity)</li>
+            <li>Frequently encountered in primary care (10-20% of consultations)</li>
+            <li>Seasonal variations with respiratory infections</li>
+          </ul>
+        </div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ const TitleSlide = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <h1 className="text-3xl font-bold mb-6 text-center text-blue-700">
-        Persistent Cough Leading to Chronic Cough Diagnosis in an Older Adult
+        Cough Management in Primary Care
       </h1>
       <div className="text-center mb-8">
         <p className="text-lg">Gina P. Hoyos, BSN, RN</p>

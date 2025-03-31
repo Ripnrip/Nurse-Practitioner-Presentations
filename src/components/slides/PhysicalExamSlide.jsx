@@ -2,76 +2,99 @@ import React from 'react';
 
 const PhysicalExamSlide = () => {
   return (
-    <div className="flex flex-col md:flex-row">
-      <div className="md:w-1/2 p-4">
-        <div className="bg-blue-50 p-4 rounded-lg shadow-md">
-          <p className="text-xl font-semibold mb-3 text-center">Vital Signs</p>
-          <div className="grid grid-cols-2 gap-3">
-            <div className="flex flex-col items-center p-2 bg-white rounded shadow">
-              <p className="font-bold">BP</p>
-              <p>140/84 mmHg</p>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <div className="bg-white p-4 rounded-lg shadow-md mb-4">
+          <h3 className="text-lg font-bold text-blue-700 mb-3">General</h3>
+          <p className="text-sm mb-2">
+            Patient is alert, appear to be reported age, no signs of distress, maintains eye contact, well groomed, 
+            and appear comfortable
+          </p>
+        </div>
+        
+        <div className="bg-white p-4 rounded-lg shadow-md mb-4">
+          <h3 className="text-lg font-bold text-blue-700 mb-3">HEENT</h3>
+          <ul className="list-disc pl-5 space-y-1 text-sm">
+            <li><span className="font-semibold">Eyes:</span> No orbital edema, sclera white, and conjunctiva pink. No discharge noted. PERRLA</li>
+            <li><span className="font-semibold">Ears:</span> Canal patent, tympanic membrane pearly gray bilaterally</li>
+            <li><span className="font-semibold">Nose:</span> Nasal mucosa pink, moist and patent. Septum midline. No sinus tenderness noted</li>
+            <li><span className="font-semibold">Throat:</span> No erythema, exudates, or lesions noted. No tonsillar hypertrophy. No signs of postnasal drip. Mucous membranes moist</li>
+          </ul>
+        </div>
+        
+        <div className="bg-white p-4 rounded-lg shadow-md">
+          <h3 className="text-lg font-bold text-blue-700 mb-3">Neurological</h3>
+          <p className="text-sm">
+            Alert and oriented, no weakness, dizziness, numbness, or tingling noted.
+            Sensation intact. Regular gait
+          </p>
+        </div>
+      </div>
+      
+      <div>
+        <div className="bg-white p-4 rounded-lg shadow-md mb-4">
+          <h3 className="text-lg font-bold text-blue-700 mb-3">Respiratory</h3>
+          <p className="text-sm font-semibold text-green-700 mb-2">
+            Lungs clear on auscultation, no wheezes or crackles. Chest expansion symmetrical. Respirations unlabored
+          </p>
+          
+          <div className="grid grid-cols-2 gap-2 mt-4">
+            <div className="bg-blue-50 p-3 rounded">
+              <h4 className="font-semibold mb-1 text-sm">Anterior Findings</h4>
+              <ul className="list-disc pl-4 text-xs">
+                <li>Clear to auscultation</li>
+                <li>Normal breath sounds</li>
+                <li>Normal percussion</li>
+              </ul>
             </div>
-            <div className="flex flex-col items-center p-2 bg-white rounded shadow">
-              <p className="font-bold">HR</p>
-              <p>57 /min</p>
-            </div>
-            <div className="flex flex-col items-center p-2 bg-white rounded shadow">
-              <p className="font-bold">RR</p>
-              <p>19 /min</p>
-            </div>
-            <div className="flex flex-col items-center p-2 bg-white rounded shadow">
-              <p className="font-bold">O₂ Sat</p>
-              <p>97% RA</p>
-            </div>
-            <div className="flex flex-col items-center p-2 bg-white rounded shadow">
-              <p className="font-bold">Temp</p>
-              <p>98.6°F</p>
-            </div>
-            <div className="flex flex-col items-center p-2 bg-white rounded shadow">
-              <p className="font-bold">BMI</p>
-              <p>32.94 kg/m²</p>
+            
+            <div className="bg-blue-50 p-3 rounded">
+              <h4 className="font-semibold mb-1 text-sm">Posterior Findings</h4>
+              <ul className="list-disc pl-4 text-xs">
+                <li>Clear to auscultation</li>
+                <li>Normal breath sounds</li>
+                <li>Normal percussion</li>
+              </ul>
             </div>
           </div>
         </div>
         
-        <div className="mt-4">
-          <p className="text-xl font-semibold mb-3">Pertinent Findings:</p>
-          <ul className="list-disc pl-8 space-y-1">
-            <li><span className="font-semibold">HEENT:</span> Nasal mucosa pink, moist, patent; no sinus tenderness; no postnasal drip</li>
-            <li><span className="font-semibold">Respiratory:</span> Lungs clear to auscultation bilaterally; no wheezes or crackles</li>
-            <li><span className="font-semibold">Cardiovascular:</span> Regular rate and rhythm; no murmurs</li>
-          </ul>
+        <div className="bg-white p-4 rounded-lg shadow-md mb-4">
+          <h3 className="text-lg font-bold text-blue-700 mb-3">Cardiovascular</h3>
+          <p className="text-sm">
+            Regular rate and rhythm, no murmurs or gallops. S1 and S2 distinct upon auscultation. 
+            No bruits present bilaterally on carotid arteries upon auscultation. Capillary refill time less than 3 seconds. 
+            Pulses 2+ bilaterally on radial, dorsalis pedis, and posterior tibial arteries
+          </p>
+        </div>
+        
+        <div className="bg-white p-4 rounded-lg shadow-md">
+          <h3 className="text-lg font-bold text-blue-700 mb-3">Gastrointestinal</h3>
+          <p className="text-sm">
+            Abdomen soft, non-tender, bowel sounds present in all quadrants
+          </p>
         </div>
       </div>
       
-      <div className="md:w-1/2 p-4 flex justify-center items-center">
-        <div className="relative w-64 h-64">
-          <div className="absolute inset-0">
-            {/* Simple human body outline */}
-            <svg viewBox="0 0 100 100" className="w-full h-full">
-              {/* Head */}
-              <circle cx="50" cy="15" r="10" fill="#f3f4f6" stroke="#000" strokeWidth="0.5" />
-              {/* Neck */}
-              <line x1="50" y1="25" x2="50" y2="30" stroke="#000" strokeWidth="1" />
-              {/* Body */}
-              <rect x="35" y="30" width="30" height="40" rx="3" fill="#f3f4f6" stroke="#000" strokeWidth="0.5" />
-              {/* Arms */}
-              <line x1="35" y1="35" x2="20" y2="50" stroke="#000" strokeWidth="1" />
-              <line x1="65" y1="35" x2="80" y2="50" stroke="#000" strokeWidth="1" />
-              {/* Legs */}
-              <line x1="42" y1="70" x2="35" y2="95" stroke="#000" strokeWidth="1" />
-              <line x1="58" y1="70" x2="65" y2="95" stroke="#000" strokeWidth="1" />
-              
-              {/* Examination points with annotations */}
-              <circle cx="50" cy="15" r="3" fill="#60a5fa" className="pulse-circle" />
-              <text x="65" y="15" fontSize="3">HEENT: Normal</text>
-              
-              <circle cx="50" cy="45" r="3" fill="#60a5fa" className="pulse-circle" />
-              <text x="65" y="45" fontSize="3">Lungs: Clear</text>
-              
-              <circle cx="40" cy="40" r="3" fill="#60a5fa" className="pulse-circle" />
-              <text x="20" y="40" fontSize="3" textAnchor="end">Heart: RRR</text>
-            </svg>
+      <div className="md:col-span-2 bg-blue-50 p-4 rounded-lg shadow-md">
+        <h3 className="text-lg font-bold text-center text-blue-700 mb-3">Physical Exam Summary</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="bg-white p-3 rounded-lg shadow">
+            <h4 className="font-semibold text-center mb-2">Key Findings</h4>
+            <ul className="list-disc pl-5 text-sm">
+              <li>No signs of respiratory distress</li>
+              <li>Clear lungs on auscultation</li>
+              <li>No evidence of nasal or sinus involvement</li>
+              <li>No signs of postnasal drip</li>
+            </ul>
+          </div>
+          <div className="bg-white p-3 rounded-lg shadow">
+            <h4 className="font-semibold text-center mb-2">Clinical Interpretation</h4>
+            <p className="text-sm">
+              Physical examination is largely unremarkable, suggesting that the patient's cough may be due to a non-acute 
+              process. The absence of postnasal drip, wheezing, or adventitious lung sounds helps narrow the differential 
+              diagnosis. The improvement with antihistamine therapy suggests a possible allergic component.
+            </p>
           </div>
         </div>
       </div>
